@@ -36,3 +36,64 @@
         traverse(document.body);
       }
     //   end to persianNumbers
+
+    // menu-controler-pc
+    let subMenu = document.querySelectorAll('.sub-menu')
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("navbar").style.top = "80px";
+        } else {
+
+            let status = false
+            for (let i = 0; i < subMenu.length; i++) {
+                let stil = window.getComputedStyle(subMenu[i]).getPropertyValue('display')
+                if (stil == 'block') {
+                    status = true
+                }
+            }
+            if (status) {
+                document.getElementById("navbar").style.top = "80px";
+            } else {
+                document.getElementById("navbar").style.top = "-50px";
+            }
+
+
+
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
+    // menu-controler-mob
+    let  navMenuItemMob = document.querySelectorAll('.nav-menu-item-mob')
+    let chevron = document.querySelectorAll('.fa-chevron-down')
+    let subMenuMob = document.querySelectorAll('.sub-menu-mob')
+    console.log(subMenuMob);
+        for (let w = 0; w < navMenuItemMob.length; w++) {
+            navMenuItemMob[w].addEventListener('click', () => {
+                if (subMenuMob[w].classList.contains('showsubmenumob')) {
+
+                    subMenuMob.forEach((itm) => {
+                        itm.classList.remove('showsubmenumob')
+                    })
+                    chevron.forEach((itm) => {
+                        itm.classList.remove('fa-chevron-up')
+                        itm.classList.add('fa-chevron-down')
+                    })
+                } else {
+                    subMenuMob.forEach((itm) => {
+                        itm.classList.remove('showsubmenumob')
+                    })
+                    chevron.forEach((itm) => {
+                      itm.classList.remove('fa-chevron-up')
+                        itm.classList.add('fa-chevron-down')
+                    })
+                    subMenuMob[w].classList.add('showsubmenumob')
+                    chevron[w].classList.add('fa-chevron-up')
+                    chevron[w].classList.remove('fa-chevron-down')
+                }
+            })
+
+        }

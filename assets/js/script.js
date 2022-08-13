@@ -39,14 +39,21 @@
 
     // menu-controler-pc
     let subMenu = document.querySelectorAll('.sub-menu')
-
     var prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
+      
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("navbar").style.top = "80px";
+            try {
+              document.querySelector('.teacher-card').style.top = '170px'
+            }
+            catch(err) {
+              var sam = 0
+            }
+            
         } else {
-
+          
             let status = false
             for (let i = 0; i < subMenu.length; i++) {
                 let stil = window.getComputedStyle(subMenu[i]).getPropertyValue('display')
@@ -56,8 +63,21 @@
             }
             if (status) {
                 document.getElementById("navbar").style.top = "80px";
+                try {
+                  document.querySelector('.teacher-card').style.top = '170px'
+                }
+                catch(err) {
+                  var sam = 0
+                }
+
             } else {
                 document.getElementById("navbar").style.top = "-50px";
+                try {
+                  document.querySelector('.teacher-card').style.top = '90px'
+                }
+                catch(err) {
+                  var sam = 0
+                }
             }
 
 
@@ -68,7 +88,7 @@
 
     // menu-controler-mob
     let  navMenuItemMob = document.querySelectorAll('.nav-menu-item-mob')
-    let chevron = document.querySelectorAll('.fa-chevron-down')
+    let chevron = document.querySelectorAll('.chev-icon')
     let subMenuMob = document.querySelectorAll('.sub-menu-mob')
     console.log(subMenuMob);
         for (let w = 0; w < navMenuItemMob.length; w++) {
@@ -79,20 +99,17 @@
                         itm.classList.remove('showsubmenumob')
                     })
                     chevron.forEach((itm) => {
-                        itm.classList.remove('fa-chevron-up')
-                        itm.classList.add('fa-chevron-down')
+                        itm.classList.remove('rotate-chev')
                     })
                 } else {
                     subMenuMob.forEach((itm) => {
                         itm.classList.remove('showsubmenumob')
                     })
                     chevron.forEach((itm) => {
-                      itm.classList.remove('fa-chevron-up')
-                        itm.classList.add('fa-chevron-down')
+                        itm.classList.remove('rotate-chev')
                     })
                     subMenuMob[w].classList.add('showsubmenumob')
-                    chevron[w].classList.add('fa-chevron-up')
-                    chevron[w].classList.remove('fa-chevron-down')
+                    chevron[w].classList.add('rotate-chev')
                 }
             })
 

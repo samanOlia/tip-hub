@@ -196,7 +196,7 @@ body {
     box-shadow: rgba(137, 135, 135, 0.05) -1px 4px 15px 3px;
 }
 
-.nav-menu-pc{
+.nav-menu-pc {
     width: 100%;
     z-index: 26;
     background-color: white;
@@ -205,14 +205,13 @@ body {
     justify-content: start;
     position: fixed;
     top: 80px;
-    transition: all .3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
 
 .nav-menu a {
     color: #576b6e;
     font-size: 15px;
     transition: all 0.3s ease-in-out;
-
 }
 
 .nav-menu-item {
@@ -256,8 +255,8 @@ body {
     height: 40px;
     position: relative;
 }
-@media (max-width:768px){
-    .nav-search-btn{
+@media (max-width: 768px) {
+    .nav-search-btn {
         width: 91%;
         margin: 0px 20px 20px 20px;
     }
@@ -315,7 +314,6 @@ body {
     font-size: 14px;
     border-radius: 7px;
     color: white;
-
 }
 
 .notification-box:hover .notification-menu-items {
@@ -355,13 +353,18 @@ body {
     height: 40px;
     border-radius: 12px;
     border: 2px solid #112031;
-    transition: all .3s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
 }
 
 .account-btn:hover {
     color: white;
     background-color: #112031;
+}
+.login-btn img {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+
 }
 
 .prepend-icon {
@@ -371,7 +374,7 @@ body {
 .account-menu-items {
     border: none;
     margin-top: 0px;
-    padding: 7px
+    padding: 7px;
 }
 
 .account-menu-items a {
@@ -417,31 +420,37 @@ body {
         align-items: flex-start;
         margin: 20px 0px !important;
     }
-    .nav-menu li{
+    .nav-menu li {
         width: 90%;
     }
-    .nav-menu-item-mob{
+    .nav-menu-item-mob {
         display: flex;
         align-items: center;
     }
-    .nav-menu a{
+    .nav-menu a {
         display: block;
         margin-bottom: 7px;
     }
-    .sub-menu-mob{
+    .sub-menu-mob {
         background-color: #f1f1f3;
         width: 100% !important;
         display: block !important;
         margin-bottom: 10px;
         max-height: 0px;
         overflow: hidden;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .sub-menu-mob a {
         padding: 5px 10px;
     }
-    .sub-menu-mob.showsubmenumob{
+    .sub-menu-mob.showsubmenumob {
         max-height: 1000px;
+    }
+    .chev-icon{
+        transition: all .3s ease-in-out;
+    }
+    .rotate-chev{
+        transform: rotate(-90deg);
     }
 
     .showmenu {
@@ -466,7 +475,10 @@ body {
     right: 50%;
     transform: translate(50%);
 }
-
+.nav-header-box-mob .logo img {
+    width: 100px;
+    height: 37px;
+}
 
 .hamburger-icon {
     position: fixed;
@@ -512,14 +524,14 @@ body {
 main {
     padding-top: 160px;
 }
-@media (max-width:768px){
-    main{
+@media (max-width: 768px) {
+    main {
         padding-top: 80px;
     }
 }
 
 .title-section {
-    font-family: 'dana-bold' !important;
+    font-family: "dana-bold" !important;
     font-size: 30px;
 }
 
@@ -534,7 +546,7 @@ main {
 
 .video-card img {
     border-radius: 5px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     outline: none;
 }
 
@@ -563,7 +575,7 @@ main {
     background-color: #fff;
     border-radius: 3px;
     border-top-right-radius: 0px;
-    color: #152D35;
+    color: #152d35;
     padding: 3px 10px;
     font-size: 15px;
     z-index: 2;
@@ -574,7 +586,7 @@ main {
     background-color: #fff;
     border-radius: 3px;
     border-top-left-radius: 0px;
-    color: #152D35;
+    color: #152d35;
     padding: 3px 10px;
     z-index: 2;
     height: 25px;
@@ -582,7 +594,7 @@ main {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 .video-card:hover .vid-time {
@@ -599,7 +611,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .video-card-details h5 {
@@ -636,9 +647,8 @@ main {
     white-space: normal;
     color: #112031;
     font-size: 16px;
-    font-family: "dana-medium"
+    font-family: "dana-medium";
 }
-
 
 /* footer */
 footer {
@@ -700,16 +710,358 @@ footer .news form button {
     height: 30px;
     border-radius: 50%;
     background-color: #112031 !important;
-    color: #ffffff ;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.pagination a:hover{
+.pagination a:hover {
     color: yellow;
 }
 
 .pagination a.active {
     color: yellow !important;
+}
+
+/* video-detail page */
+
+/* video-player */
+
+.video-player-box {
+    width: auto;
+    height: auto;
+    position: relative;
+    border-radius: 20px;
+}
+
+.video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: inline;
+}
+
+.video-btn {
+    padding: 0;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.video-btn img {
+    width: 90px;
+    height: 90px;
+}
+
+@media (max-width: 989px) {
+    .video-btn img {
+        width: 70px;
+        height: 70px;
+    }
+}
+@media (max-width: 768px) {
+    .video-btn img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.video-btn:focus,
+.video-btn:hover,
+.video-btn:active {
+    text-decoration: none;
+    color: white;
+}
+
+.video {
+    opacity: 1;
+    scroll-behavior: unset;
+    width: 100%;
+    z-index: -1;
+}
+
+@media (max-width: 600px) {
+    .video {
+        margin-top: 10px;
+    }
+}
+
+.video video {
+    border-radius: 20px;
+    width: 100%;
+}
+
+.video-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.close-btn {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.video-poster {
+    right: 0;
+    top: 0;
+    border-radius: 17px;
+    object-fit: cover;
+}
+.video-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(169, 208, 113, 0), rgb(30, 30, 31));
+    border-radius: 17px;
+}
+/* end video */
+/* video-details */
+.video-title {
+    color: #112031;
+    font-size: 25px;
+    font-family: "dana-medium";
+}
+.view-like span {
+    color: #787878;
+}
+.view-like i {
+    font-size: 18px;
+}
+.view-like .liked {
+    color: red;
+}
+
+/* labels */
+.labels a {
+    margin: 0px 6px;
+    color: #4878f2;
+}
+.comment-area {
+    border: 1px solid rgb(207, 205, 205);
+    border-radius: 7px;
+    outline: none;
+}
+
+/* comment */
+.user-profile {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
+.comment {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px #e3e1e9;
+}
+.comment-date-time {
+    color: #787878;
+    font-size: 14px;
+}
+.comment-text {
+    color: #112031;
+    font-size: 14px;
+}
+.comment-child {
+    margin-right: 20px;
+}
+
+/* teacher card */
+.teacher-profile {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+}
+.teacher-description {
+    font-size: 14px;
+    color: #787878;
+    text-align: justify;
+}
+.teacher-social-media i {
+    font-size: 20px;
+    margin: 0px 10px;
+    color: #112031;
+}
+.teacher-card {
+    position: sticky !important;
+    top: 160px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* login page */
+.field{
+    position: relative;
+    width: 100%;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+.field i{
+    color: #787878;
+}
+.field input{
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 5px;
+background-color: transparent;
+}
+.field input::placeholder{
+    color: #787878;
+    text-align: right;
+}
+/* social-accunt */
+.social-accunt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-accunt a{
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 7px 0px;
+    border-radius: 5px;
+    margin: 0px 3px;
+    transition: all .3s ease-in-out;
+}
+.social-accunt a:hover{
+    border: 1px solid rgb(88, 87, 87);
+}
+/* about us page */
+.lineh30{
+    line-height: 30px;
+}
+.our-team-title{
+    font-family: 'dana-bold' !important;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.member{
+    width: 25%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:768px){
+    .member{
+        width: 50%;
+    }
+}
+.member-img-box{
+    width: 170px;
+    height: 170px;
+    position: relative;
+}
+.member img{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+}
+.member-overlay{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51, 41, 41, .4);
+    z-index: 1;
+    border-radius: 100%;
+    opacity: 1;
+    transition: all .1s ease-in-out;
+}
+.member-overlay:hover{
+    opacity: 0;
+}
+.member p{
+    margin-top: 10px;
+}
+
+/* user-panel page */
+.user-panel{
+    border-radius: 10px;
+    border: 1px solid rgb(143, 141, 141);
+    padding: 50px 20px;
+    position: relative;
+}
+.user-panel-box{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.user-panel-field{
+    position: relative;
+    width: 49%;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.05);
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 10px;
+}
+@media (max-width:768px){
+    .user-panel-field{
+        width: 100%;
+    }
+}
+.user-panel-field i{
+    color: #787878;
+}
+.user-panel-field input{
+    display: flex;
+    flex-grow: 1;
+    padding: 10px 5px;
+background-color: transparent;
+}
+.user-panel-field input::placeholder{
+    color: #787878;
+    text-align: right;
+    font-size: 15px;
+}
+.user-panel-profile{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: -30px;
+    right: 60px;
+    
+}
+.user-panel-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.change-profile-btn{
+    position: absolute;
+    top: -17px;
+    right: 140px;
+}
+.user-details p {
+    font-size: 13px;
+    color: #787878;
+}
+.user-details h6 {
+    font-size: 14px;
 }

@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/components/bootstrap/bootstrap-rtl.min.css">
     <link rel="stylesheet" href="assets/components/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/96472d4340.js"></script>
+
+
     <title> مجله</title>
 </head>
 
@@ -58,10 +60,10 @@
                             </a>
                             <div class="dropdown-menu account-menu-items custom-bg"
                                 aria-labelledby="dropdownMenuButton">
-                                <a class="" href="#"> <i class=" fa fa-account"></i>
+                                <a class="" href="login.html"> <i class=" fa fa-account"></i>
                                     ورود</a>
-                                <a class="" href="#"> ثبت نام</a>
-                                <a class="" href="#"> پروفایل</a>
+                                <a class="" href="register.html"> ثبت نام</a>
+                                <a class="" href="user-panel.html"> پروفایل</a>
                                 <a class="" href="#"> مورد علاقه ها</a>
                             </div>
                         </div>
@@ -214,31 +216,215 @@
                     <div class="col-md-8">
                         <div>
                             <!-- video -->
-                            <div class="video-player" style="border-radius: 20px;">
+                            <div class="video-player-box">
                                 <div class="video-icon">
                                     <div class="btn video-btn" onclick="playvideo()" id="videobtn">
-                                        <img src="assets/images/play-video-btn.png" alt="">
+                                        <img src="assets/image/play-video-btn.png" alt="">
                                     </div>
                                 </div>
                                 <div class="video">
                                     <video width="100%" id="myVideo" autoplay>
-                                        <source src="assets/videos/pexels-nothing-ahead-10505868.mp4" type="video/mp4">
+                                        <source src="assets/video/v1.mp4" type="video/mp4">
                                     </video>
-                                    <img src="assets/images/test/django.jpg" width="100%" height="100%"
+                                    <img src="assets/image/p2.jpg" width="100%" height="100%"
                                         class="position-absolute video-poster" alt="">
-                                    <img src="assets/images/label.svg" width="100%" height="100%"
-                                        class="position-absolute video-label" alt="">
-                                    <div
-                                        class="video-description  w-100 align-items-center justify-content-between  px-4 text-white">
-                                        <p>ویدیو معرفی دوره صفر تا صد فلاتر</p>
+
+                                    <div class="video-overlay"></div>
+                                    <div class="video-description px-2 text-white">
+
                                         <p> 35 دقیقه</p>
                                     </div>
                                     <h5 class="close-btn" onclick="stopPlayer()">X</h5>
                                 </div>
                             </div>
                             <!-- end video -->
+                            <!-- title -->
+                            <h3 class="video-title my-3"> تازه ترین ویدیو ها تازه ترین ویدیو ها تازه ترین ویدیو
+                            </h3>
+                            <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
+                                <p class="color78">22 مرداد 1401</p>
+                                <div class="d-flex align-items-center view-like">
+                                    <div class="mx-3">
+                                        <span>22</span>
+                                        <i class="fa fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <span>21</span>
+                                        <i class="fa fa-heart-o" type='button' aria-hidden="true"></i>
+                                        <!-- <i class="fa fa-heart liked" type='button' aria-hidden="true" ></i> -->
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- description -->
+                            <div class="border-bottom pb-3">
+                                <h4 class="my-3">درباره فیلم</h4>
+                                <p class="color78">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                                    استفاده از طراحان
+                                    گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                                    شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
+                                    باشد</p>
+
+                                <div class="labels">
+                                    <h4 class="my-3">برچسب ها</h4>
+                                    <ul class="d-flex align-items-center">
+                                        <li><a href="#" title="">#گردشگری</a></li>
+                                        <li><a href="#" title="">#تفریحی </a></li>
+                                        <li><a href="#" title="">#دشت نور</a></li>
+                                        <li><a href="#" title="">#مکان های تفریحی</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- end des -->
+
+                            <!-- comments -->
+                            <div>
+
+                                <div class="py-3">
+                                    <span>2982</span>
+                                    <span>نظر</span>
+                                </div>
+
+                                <form action="">
+                                    <textarea class="w-100 p-2 comment-area" name="" id="" cols="30" rows="10"
+                                        placeholder="دیدگاه خود را بنویسید"></textarea>
+                                    <div class="d-flex align-items-center justify-content-end pt-3">
+                                        <button class="btn custom-btn">ارسال نظر</button>
+                                    </div>
+                                </form>
+                                <!-- comment -->
+                                <div class="comment my-3 p-2">
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
+                                            <p class="user-name pr-2">امیرحسین امیری</p>
+                                        </div>
+
+                                        <p class="comment-date-time"> چهار روز پیش</p>
+                                    </div>
+                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ،
+                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+
+                                    <div class="d-flex align-items-center justify-content-end reply" type='button'>
+                                        <i class="fa fa-reply"></i>
+                                        <p>پاسخ به این نظر</p>
+                                    </div>
+                                </div>
+                                <!-- end comment -->
+                                <div class="comment my-3 p-2">
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
+                                            <p class="user-name pr-2">امیرحسین امیری</p>
+                                        </div>
+
+                                        <p class="comment-date-time"> چهار روز پیش</p>
+                                    </div>
+                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ،
+                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+
+                                    <div class="d-flex align-items-center justify-content-end reply" type='button'>
+                                        <i class="fa fa-reply"></i>
+                                        <p>پاسخ به این نظر</p>
+                                    </div>
+                                </div>
+                                <!-- end comment -->
+                                <div class="comment my-3 p-2">
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
+                                            <p class="user-name pr-2">امیرحسین امیری</p>
+                                        </div>
+
+                                        <p class="comment-date-time"> چهار روز پیش</p>
+                                    </div>
+                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ،
+                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+
+                                    <div class="d-flex align-items-center justify-content-end reply" type='button'>
+                                        <i class="fa fa-reply"></i>
+                                        <p>پاسخ به این نظر</p>
+                                    </div>
+                                </div>
+                                <!-- end comment child -->
+                                <div class="comment my-3 p-2 comment-child">
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
+                                            <p class="user-name pr-2"> امیرحسین امیری</p>
+                                        </div>
+
+                                        <p class="comment-date-time"> چهار روز پیش</p>
+                                    </div>
+                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ،
+                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+
+                                </div>
+                                <!-- end comment -->
+                                <!-- end comment child -->
+                                <div class="comment my-3 p-2 comment-child">
+                                    <div class=" d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
+                                            <p class="user-name pr-2">امیرحسین امیری</p>
+                                        </div>
+
+                                        <p class="comment-date-time"> چهار روز پیش</p>
+                                    </div>
+                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
+                                        با تولید سادگی نامفهوم
+                                        از صنعت چاپ،
+                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
+
+                                </div>
+                                <!-- end comment -->
+
+
+
+                            </div>
+                            <!-- end comments -->
+
                         </div>
                     </div>
+                    <!-- main -->
+                    <!-- side -->
+                    <aside class="col-md-4 ">
+                        <div class="custom-bg p-2 teacher-card">
+                            <div class="border-bottom py-3 text-center">
+                                <h4>درباره استاد</h4>
+                            </div>
+                            <div class="d-flex align-items-center py-3">
+                                <img src="assets/image/sutdent-prof.png" alt="student" class="teacher-profile">
+                                <p class="user-name pr-2">امیرحسین امیری </p>
+                            </div>
+                            <p class="color78 teacher-description py-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+
+                                <div class="teacher-social-media d-flex align-items-center justify-content-center flex-wrap">
+                                    <a href=""> <i class="fa fa-instagram"></i></a>
+                                    <a href=""> <i class="fa fa-github"></i></a>
+                                    <a href=""> <i class="fa fa-linkedin"></i></a>
+                                    <a href=""> <i class="fa fa-twitter"></i></a>
+                                </div>
+                        </div>
+                    </aside>
+
+                    <!-- end side -->
                 </div>
             </div>
         </section>
@@ -325,10 +511,10 @@
                         <button class="footer-btn my-3">ارسال پیام</button>
 
                         <div class="social-media d-flex align-items-center flex-wrap ">
-                            <a href=""> <i class="fab fa-instagram"></i></a>
-                            <a href=""> <i class="fab fa-telegram"></i></a>
-                            <a href=""> <i class="fab fa-whatsapp"></i></a>
-                            <a href=""> <i class="fab fa-twitter"></i></a>
+                            <a href=""> <i class="fa fa-instagram"></i></a>
+                            <a href=""> <i class="fa fa-telegram"></i></a>
+                            <a href=""> <i class="fa fa-whatsapp"></i></a>
+                            <a href=""> <i class="fa fa-twitter"></i></a>
                         </div>
 
                     </div>
@@ -345,10 +531,43 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
-
     <script src="assets/components/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script>
+        // video-player
+        const videobtn = document.querySelector('.video-btn');
+        const video = document.querySelector('.video');
+        const videotag = document.querySelector('video')
+        const videoDescription = document.querySelector('.video-description')
+        const closeBtn = document.querySelector('.close-btn')
+        const videoPoster = document.querySelector('.video-poster')
+        const videoOverlay = document.querySelector('.video-overlay')
+        function stopPlayer() {
+            videobtn.style.display = "block";
+            closeBtn.style.display = 'none';
+            videoPoster.style.display = 'inline'
+            video.style.zIndex = '-1'
+            videotag.pause()
+            videotag.style.borderRadius = '20px'
+            videoDescription.style.display = 'flex'
+            videotag.controls = false
+            videotag.style.borderRadius = '15px'
+            videoOverlay.style.display = 'block'
+        };
 
+        function playvideo() {
+            videobtn.style.display = "none";
+            video.style.zIndex = '22222'
+            videotag.autoplay = true
+            videotag.play()
+            videotag.style.borderRadius = '20px'
+            videotag.controls = true
+            videoDescription.style.display = 'none'
+            closeBtn.style.display = 'block'
+            videoPoster.style.display = 'none'
+            videoOverlay.style.display = 'none'
+        }
+    </script>
 </body>
 
 </html>

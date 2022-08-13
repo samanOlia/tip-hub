@@ -24,7 +24,7 @@
 
                 <div class="d-flex flex-column flex-md-row align-items-center pr-md-4">
                     <div class="logo d-flex justify-content-center align-items-center ml-3">
-                        <a href="index.html"><img src="assets/image/logo.png" class="logo-img-light" alt="" /></a>
+                        <a href="index.html"><img src="assets/image/logo.png" class="logo-img img-fluid" alt="" /></a>
                     </div>
                     <div class="nav-search-btn">
                         <input type="search" placeholder="جستجو">
@@ -48,21 +48,20 @@
                         </div>
                     </div>
 
-                    <div class="header-account mx-3">
+                    <div class="header-login d-none d-md-block">
                         <div class="notification-box dropdown">
-                            <a href="" class="btn account-btn" type="button" id="dropdownMenuButton"
+                            <a href="" class="btn login-btn" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="prepend-icon ml-1">
-                                    <i class="fa fa-user-circle"></i>
-                                </span> <span>حساب کاربری </span>
+                                <img src="assets/image/sutdent-prof.png" alt="">
                             </a>
                             <div class="dropdown-menu account-menu-items custom-bg"
                                 aria-labelledby="dropdownMenuButton">
-                                <a class="" href="#"> <i class=" fa fa-account"></i>
+                                <a class="" href="login.html"> <i class=" fa fa-account"></i>
                                     ورود</a>
-                                <a class="" href="#"> ثبت نام</a>
-                                <a class="" href="#"> پروفایل</a>
+                                <a class="" href="register.html"> ثبت نام</a>
+                                <a class="" href="user-panel.html"> پروفایل</a>
                                 <a class="" href="#"> مورد علاقه ها</a>
+                                <a class="" href="#"> خروج</a>
                             </div>
                         </div>
                     </div>
@@ -70,7 +69,7 @@
 
                 <nav class="nav-menu p-0 m-0 d-flex d-sm-flex d-md-none d-lg-none">
                     <li id="" class="mx-3"><a class="nav-menu-item-mob">زبان های برنامه نویسی
-                            <i class="fa fa-chevron-down pr-1"></i>
+                        <i class="fa fa-chevron-left chev-icon pr-1"></i>
                         </a>
                         <ul class="sub-menu-mob">
                             <a href="">جاوا</a>
@@ -83,7 +82,7 @@
                         </ul>
                     </li>
                     <li id="" class="mx-3"><a class="nav-menu-item-mob ">فریمورک
-                            <i class="fa fa-chevron-down pr-1"></i>
+                        <i class="fa fa-chevron-left chev-icon pr-1"></i>
                         </a>
                         <ul class="sub-menu-mob">
                             <a href="">جاوا</a>
@@ -97,7 +96,7 @@
                     </li>
                     <li id="" class="mx-3">
                         <a class="nav-menu-item-mob ">طراحی وب
-                            <i class="fa fa-chevron-down pr-1"></i>
+                            <i class="fa fa-chevron-left chev-icon pr-1"></i>
                         </a>
                         <ul class="sub-menu-mob">
                             <a href="">جاوا</a>
@@ -110,7 +109,7 @@
                         </ul>
                     </li>
                     <li id="" class="mx-3"><a class="nav-menu-item-mob">زبان های برنامه نویسی
-                            <i class="fa fa-chevron-down pr-1"></i>
+                        <i class="fa fa-chevron-left chev-icon pr-1"></i>
                         </a>
                         <ul class="sub-menu-mob">
                             <a href="">جاوا</a>
@@ -137,21 +136,41 @@
                     <div class="bar3"></div>
                 </div>
                 <div class="logo">
-                    <a href="index.html"><img src="assets/image/logo.png" class="logo-img" alt="" /></a>
+                    <a href="index.html"><img src="assets/image/logo.png" class="logo-img img-fluid" alt="" /></a>
                 </div>
 
-                <div class="dropdown notification-box mx-3">
-                    <div class="position-relative d-block d-md-none " type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/image/notification.png" class="notification-img" alt="">
-                        <div class="badge">2</div>
-                    </div>
-                    <div class="dropdown-menu notification-menu-items custom-bg"
-                        aria-labelledby="dropdownMenuButton">
-                        <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
-                        <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید </a>
-                        <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی</a>
+                <div class="d-flex align-items-center">
+                    <div class="dropdown notification-box">
+                        <div class="position-relative d-block d-md-none " type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/image/notification.png" class="notification-img" alt="">
+                            <div class="badge">2</div>
+                        </div>
+                        <div class="dropdown-menu notification-menu-items custom-bg"
+                            aria-labelledby="dropdownMenuButton">
+                            <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
+                            <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید </a>
+                            <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی</a>
 
+                        </div>
+                    </div>
+
+                    <div class="header-account">
+                        <div class="notification-box dropdown">
+                            <a href="" class="btn login-btn" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="assets/image/sutdent-prof.png" alt="">
+                            </a>
+                            <div class="dropdown-menu account-menu-items custom-bg"
+                                aria-labelledby="dropdownMenuButton">
+                                <a class="" href="login.html"> <i class=" fa fa-account"></i>
+                                    ورود</a>
+                                <a class="" href="register.html"> ثبت نام</a>
+                                <a class="" href="user-panel.html"> پروفایل</a>
+                                <a class="" href="#"> مورد علاقه ها</a>
+                                <a class="" href="#"> خروج</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -751,10 +770,10 @@
                         <button class="footer-btn my-3">ارسال پیام</button>
 
                         <div class="social-media d-flex align-items-center flex-wrap ">
-                            <a href=""> <i class="fab fa-instagram"></i></a>
-                            <a href=""> <i class="fab fa-telegram"></i></a>
-                            <a href=""> <i class="fab fa-whatsapp"></i></a>
-                            <a href=""> <i class="fab fa-twitter"></i></a>
+                            <a href=""> <i class="fa fa-instagram"></i></a>
+                            <a href=""> <i class="fa fa-telegram"></i></a>
+                            <a href=""> <i class="fa fa-whatsapp"></i></a>
+                            <a href=""> <i class="fa fa-twitter"></i></a>
                         </div>
 
                     </div>

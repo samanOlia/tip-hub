@@ -64,7 +64,7 @@
     background-color: var(--green-color) !important;
 }
 
-body,
+body:not(i),
 *:not(i) {
     box-sizing: border-box;
     word-wrap: break-word;
@@ -364,7 +364,6 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 100%;
-
 }
 
 .prepend-icon {
@@ -446,10 +445,10 @@ body {
     .sub-menu-mob.showsubmenumob {
         max-height: 1000px;
     }
-    .chev-icon{
-        transition: all .3s ease-in-out;
+    .chev-icon {
+        transition: all 0.3s ease-in-out;
     }
-    .rotate-chev{
+    .rotate-chev {
         transform: rotate(-90deg);
     }
 
@@ -902,7 +901,7 @@ footer .news form button {
 }
 
 /* login page */
-.field{
+.field {
     position: relative;
     width: 100%;
     text-align: right;
@@ -913,47 +912,51 @@ footer .news form button {
     padding: 0px 10px;
     border-radius: 10px;
 }
-.field i{
+.field i {
     color: #787878;
 }
-.field input{
+.field input {
     display: flex;
     flex-grow: 1;
     padding: 10px 5px;
-background-color: transparent;
+    background-color: transparent;
 }
-.field input::placeholder{
+.field input::placeholder {
     color: #787878;
     text-align: right;
 }
 /* social-accunt */
-.social-accunt{
+.social-accunt {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.social-accunt a{
+.social-accunt a {
     display: flex;
     flex-grow: 1;
     border: 1px solid rgb(202, 202, 202);
     padding: 7px 0px;
     border-radius: 5px;
     margin: 0px 3px;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.social-accunt a:hover{
+.social-accunt a:hover {
     border: 1px solid rgb(88, 87, 87);
 }
 /* about us page */
-.lineh30{
-    line-height: 30px;
+.lineh40 {
+    line-height: 40px;
+    font-size: 18px;
 }
-.our-team-title{
-    font-family: 'dana-bold' !important;
+.our-team-title {
+    font-family: "dana-bold" !important;
     text-align: center;
     margin-bottom: 30px;
 }
-.member{
+.aboutus-goals li{
+list-style: decimal !important;
+}
+.member {
     width: 25%;
     margin: 20px 0px;
     display: flex;
@@ -961,55 +964,54 @@ background-color: transparent;
     align-items: center;
     justify-content: center;
 }
-@media (max-width:768px){
-    .member{
+@media (max-width: 768px) {
+    .member {
         width: 50%;
     }
 }
-.member-img-box{
+.member-img-box {
     width: 170px;
     height: 170px;
     position: relative;
 }
-.member img{
+.member img {
     width: 170px;
     height: 170px;
     border-radius: 100%;
 }
-.member-overlay{
+.member-overlay {
     position: absolute;
     top: 0px;
     right: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(51, 41, 41, .4);
+    background-color: rgba(51, 41, 41, 0.4);
     z-index: 1;
     border-radius: 100%;
     opacity: 1;
-    transition: all .1s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
-.member-overlay:hover{
+.member-overlay:hover {
     opacity: 0;
 }
-.member p{
+.member p {
     margin-top: 10px;
 }
 
 /* user-panel page */
-.user-panel{
+.user-panel {
     border-radius: 10px;
     border: 1px solid rgb(143, 141, 141);
     padding: 50px 20px;
     position: relative;
 }
-.user-panel-box{
+.user-panel-box {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
-.user-panel-field{
+.user-panel-field {
     position: relative;
     width: 49%;
     text-align: right;
@@ -1020,40 +1022,39 @@ background-color: transparent;
     padding: 0px 10px;
     border-radius: 10px;
 }
-@media (max-width:768px){
-    .user-panel-field{
+@media (max-width: 768px) {
+    .user-panel-field {
         width: 100%;
     }
 }
-.user-panel-field i{
+.user-panel-field i {
     color: #787878;
 }
-.user-panel-field input{
+.user-panel-field input {
     display: flex;
     flex-grow: 1;
     padding: 10px 5px;
-background-color: transparent;
+    background-color: transparent;
 }
-.user-panel-field input::placeholder{
+.user-panel-field input::placeholder {
     color: #787878;
     text-align: right;
     font-size: 15px;
 }
-.user-panel-profile{
+.user-panel-profile {
     width: 60px;
     height: 60px;
     border-radius: 100%;
     position: absolute;
     top: -30px;
     right: 60px;
-    
 }
 .user-panel-profile img {
     width: 60px;
     height: 60px;
     border-radius: 100%;
 }
-.change-profile-btn{
+.change-profile-btn {
     position: absolute;
     top: -17px;
     right: 140px;
@@ -1064,4 +1065,83 @@ background-color: transparent;
 }
 .user-details h6 {
     font-size: 14px;
+}
+
+/* teachers */
+
+.teachers-item div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.teacher-pro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+.teacher-email {
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-align: justify;
+}
+.teacher-items {
+    top: 96px;
+    max-height: fit-content;
+    position: sticky;
+}
+.teacher-items img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.teacher-course-item {
+    overflow: hidden;
+    text-overflow: ellipsis !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    text-align: justify;
+}
+
+/* why-tiphub */
+.why-tiphub-header {
+    position: relative;
+}
+.why-tiphub-header img {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+@media (max-width: 768px) {
+    .why-tiphub-header img {
+        height: 200px;
+    }
+}
+.why-tiphub-header .why-tiphub-title {
+    position: absolute;
+    bottom: 70px;
+    color: var(--green-color);
+
+}
+.why-tiphub-des{
+    position: absolute;
+    bottom: 30px;
+    color: var(--green-color);
+}
+.why-tiphub li{
+    color: #112031;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 12px 0px;
+    list-style: circle !important;
 }

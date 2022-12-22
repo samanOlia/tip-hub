@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> 404 page </title>
+  <link rel="stylesheet" href="./assets/css/404style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container container-star">
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-1"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+  <div class="star-2"></div>
+</div>
+<div class="container container-bird">
+  <div class="bird bird-anim">
+    <div class="bird-container">
+      <div class="wing wing-left">
+        <div class="wing-left-top"></div>
+      </div>
+      <div class="wing wing-right">
+        <div class="wing-right-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bird bird-anim">
+    <div class="bird-container">
+      <div class="wing wing-left">
+        <div class="wing-left-top"></div>
+      </div>
+      <div class="wing wing-right">
+        <div class="wing-right-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bird bird-anim">
+    <div class="bird-container">
+      <div class="wing wing-left">
+        <div class="wing-left-top"></div>
+      </div>
+      <div class="wing wing-right">
+        <div class="wing-right-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bird bird-anim">
+    <div class="bird-container">
+      <div class="wing wing-left">
+        <div class="wing-left-top"></div>
+      </div>
+      <div class="wing wing-right">
+        <div class="wing-right-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bird bird-anim">
+    <div class="bird-container">
+      <div class="wing wing-left">
+        <div class="wing-left-top"></div>
+      </div>
+      <div class="wing wing-right">
+        <div class="wing-right-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="bird bird-anim">
+    <div class="bird-container">
+      <div class="wing wing-left">
+        <div class="wing-left-top"></div>
+      </div>
+      <div class="wing wing-right">
+        <div class="wing-right-top"></div>
+      </div>
+    </div>
+  </div>
+  <div class="container-title">
+    <div class="title">
+      <div class="number">4</div>
+      <div class="moon">
+        <div class="face">
+          <div class="mouth"></div>
+          <div class="eyes">
+            <div class="eye-left"></div>
+            <div class="eye-right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="number">4</div>
+    </div>
+    <div class="subtitle">صفحه مورد نظر یافت نشد </div>
+    <button>برگشت</button>
+  </div>
+</div>
+<!-- partial -->
+
+<script>
+     // to persianNumbers
+     $(document).ready(function () {
+        ConvertNumberToPersion();
+      });
+      function ConvertNumberToPersion() {
+        persian = { 0: '۰', 1: '۱', 2: '۲', 3: '۳', 4: '۴', 5: '۵', 6: '۶', 7: '۷', 8: '۸', 9: '۹' };
+        function traverse(el) {
+          if (el.nodeType == 3) {
+            var list = el.data.match(/[0-9]/g);
+            if (list != null && list.length != 0) {
+              for (var i = 0; i < list.length; i++)
+                el.data = el.data.replace(list[i], persian[list[i]]);
+            }
+          }
+          for (var i = 0; i < el.childNodes.length; i++) {
+            traverse(el.childNodes[i]);
+          }
+        }
+        traverse(document.body);
+      }
+    //   end to persianNumbers
+</script>
+  
+</body>
+</html>

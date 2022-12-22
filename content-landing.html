@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" referrerpolicy="no-referrer" />
 
-
     <title> مجله</title>
 </head>
 
@@ -50,13 +49,11 @@
                         </div>
                     </div>
 
-                    <div class="header-account mx-3 d-none d-md-block">
+                    <div class="header-login d-none d-md-block">
                         <div class="notification-box dropdown">
-                            <a href="" class="btn account-btn" type="button" id="dropdownMenuButton"
+                            <a href="" class="btn login-btn" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="prepend-icon ml-1">
-                                    <i class="fa fa-user-circle"></i>
-                                </span> <span>حساب کاربری </span>
+                                <img src="assets/image/sutdent-prof.png" alt="">
                             </a>
                             <div class="dropdown-menu account-menu-items custom-bg"
                                 aria-labelledby="dropdownMenuButton">
@@ -159,18 +156,11 @@
                         </div>
                     </div>
 
-                    <div class="header-account d-block d-md-none mx-2">
+                    <div class="header-account">
                         <div class="notification-box dropdown">
-                            <a href="" class="btn account-btn small border-0" type="button" id="dropdownMenuButton"
+                            <a href="" class="btn login-btn" type="button" id="dropdownMenuButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                    height=".75em" width=".75em" style="font-size: 1.6em; margin-inline-end: 0.2em;">
-                                    <path fill="none" d="M0 0h24v24H0z"></path>
-                                    <path
-                                        d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v14z">
-                                    </path>
-                                </svg>
-                                ورود
+                                <img src="assets/image/sutdent-prof.png" alt="">
                             </a>
                             <div class="dropdown-menu account-menu-items custom-bg"
                                 aria-labelledby="dropdownMenuButton">
@@ -238,75 +228,44 @@
     </nav>
 
     <main>
-        <section class="py-5">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-sm-9 col-md-7 col-lg-5">
-                        <div class="custom-bg p-2">
 
-                            <div class="my-3 text-center">ورود به حساب</div>
-                            <form  class="">
-                                <div  class="field" >
-                                        <i class="fa fa-envelope"></i>
-                                        <input class="email-input" type="email" placeholder="پست الکترونیک" dir="ltr" maxlength="50" required="" >
-                    
-                                </div>
-
-                                <div class="field">
-                                        <i class="fa fa-lock"></i>
-                                        <input class="password-input" dir="ltr" type="password" placeholder="گذرواژه">
-                                </div>
-                                <div class="mr-1 d-flex justify-content-between">
-                                        <div>
-                                            <input type="checkbox" class="checkbox-input" tabindex="0">
-                                        <label class="small">نمایش گذرواژه</label>
-                                        </div>
-                                        <div>
-                                            <a href="forgotpassword.html" class="small">رمز عبور خود را فراموش کرده اید؟</a>
-                                        </div>
-                                
-                                </div>
-
-                                <div class="my-3">
-                                    <button class="btn custom-btn w-100">ورود</button>
-                                </div>
-                                <div class="pb-2 border-bottom">
-                                    <span class="small">حساب کاربری ندارید؟</span>
-                                <a href="register.html" class="small">
-                                    عضویت در سایت
-                                </a>
-                                </div>
-                            </form>
-
-
-                            <div class="">
-                                <p class="small text-center my-3">ورود از طریق حساب‌های کاربری دیگر</p>
-                                <div class="" >
-
-                                        <div class="social-accunt">
-
-                                            <a title="Google" class="" href="">
-                                                <img height="24" src="assets/image/google.svg" class="d-block m-auto">
-                                            </a>
-
-                                            <a title="GitHub" class="" href="">
-                                                <img height="24" src="assets/image/github.svg" class="d-block m-auto">
-                                            </a>
-
-                                            <a title="LinkedIn" class="" href="">
-                                                <img height="24" src="assets/image/linkedin.svg" class="d-block m-auto">
-                                            </a>
-
-                                        </div>
-                                </div>
-                            </div>
-
-
+        <section class="container py-5">
+            <h3 class="my-4 text-center title-section"> چگونه می توانید در تیپ هاب تولید محتوا کنید؟</h3>
+           
+                <div class="custom-bg p-4 col-md-7 m-auto">
+                    <form class="">
+                        <div class="field">
+                            <input class="d-block" type="text" placeholder="نام" dir="ltr"
+                                maxlength="50" required="">
                         </div>
-                    </div>
+                        <div class="field">
+                            <input type="text" placeholder="تخصص" dir="ltr"
+                                maxlength="50" required="">
+                        </div>
+                        <div class="field">
+                            <input type="email" placeholder="ایمیل" dir="ltr"
+                                maxlength="50" required="">
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="شماره" dir="ltr"
+                                maxlength="11" required="">
+                        </div>
+
+                        <p class="mt-3">
+                            <label>رزومه(در قالب pdf):</label>
+                            <input required="" type="file" dir="rtl">
+                        </p>
+
+                        <button class="custom-btn w-100 my-3">ثبت</button>
+                    </form>
+
+
                 </div>
-            </div>
+            
+           
         </section>
+
+
 
     </main>
 
@@ -317,75 +276,93 @@
 
             <section class="row d-flex align-items-baseline footer-items">
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="">
-                            <p>راهنمای استفاده</p>
-                        </a>
-                        <a href="">
-                            <p>سوالات متداول </p>
-                        </a>
-                        <a href="">
-                            <p>قوانین و مقررات </p>
-                        </a>
-                        <a href="">
-                            <p>پیشنهاد آموزش </p>
-                        </a>
-                    </div>
+                    <ul>
+                        <h6 class="mb-3 text-white"><span class="border-bottom">تیپ هاب </span></h6>
+                        <li>
+                            <a href="">
+                                <p> ارتباط با ما</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p> درباره ما</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p> چرا تیپ هاب</p>
+                            </a>
+                        </li>
+                      
+
+                    </ul>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="">
-                            <p>راهنمای استفاده</p>
-                        </a>
-                        <a href="">
-                            <p>سوالات متداول </p>
-                        </a>
-                        <a href="">
-                            <p>قوانین و مقررات </p>
-                        </a>
-                        <a href="">
-                            <p>پیشنهاد آموزش </p>
-                        </a>
-                    </div>
+                    <ul>
+                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات تیپ هاب</span></h6>
+                        <li>
+                            <a href="">
+                                <p> نکات پایتونی</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p> نکات جاوااسکریپتی</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p> نکات فلاتری</p>
+                            </a>
+                        </li>
+                        
+
+                    </ul>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="">
-                            <p>مستندات جنگو</p>
-                        </a>
-                        <a href="">
-                            <p>آموزش دارت</p>
-                        </a>
-                        <a href="">
-                            <p>خلاصه کتاب‌های پایتون</p>
-                        </a>
-                        <a href="">
-                            <p>چند نکته ی پایتونی</p>
-                        </a>
-                    </div>
+                    <ul>
+                        <h6 class="mb-3 text-white"><span class="border-bottom"> همکاری با ما </span></h6>
+                        <li>
+                            <a href="">
+                                <p> شرایط همکاری</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p> قوانین و مقررات</p>
+                            </a>
+                        </li>
+                       
+
+                    </ul>
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
+                    <ul>
                         <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="" class="">
-                            <img src="assets/image/f1.svg" alt="">
-                            اهواز، خیابان نادری، خیابان امیری، کوچه مهرگان، پلاک ۱۴، کد پستی 6381838168
-                        </a>
-                        <a href="" class="">
-                            <img src="assets/image/f2.svg" alt="">
-                            پشتیبانی: 09910549803
-                        </a>
-                        <a href="" class="">
-                            <img src="assets/image/f3.svg" alt="">
-                            30009010
-                        </a>
-                        <a href="" class="">
-                            <img src="assets/image/f4.svg" alt="">
-                            amirhamiri74@gmial.com
-                        </a>
+                        <li>
+                            <a href="" class="">
+                                <img src="assets/image/f1.svg" alt="">
+                                اهواز، خیابان نادری، خیابان امیری، کوچه مهرگان، پلاک ۱۴، کد پستی 6381838168
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="">
+                                <img src="assets/image/f2.svg" alt="">
+                                پشتیبانی: 09910549803
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="">
+                                <img src="assets/image/f3.svg" alt="">
+                                30009010
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="">
+                                <img src="assets/image/f4.svg" alt="">
+                                amirhamiri74@gmial.com
+                            </a>
+                        </li>
 
                         <button class="footer-btn my-3">ارسال پیام</button>
 
@@ -396,7 +373,7 @@
                             <a href=""> <i class="fa fa-twitter"></i></a>
                         </div>
 
-                    </div>
+                    </ul>
                 </div>
             </section>
 
@@ -410,23 +387,11 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
         crossorigin="anonymous"></script>
+
     <script src="assets/components/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
-    <script>
-        let checkboxInput = document.querySelector('.checkbox-input')
-        let passwordInput = document.querySelector('.password-input')
-        let isHide = true
-        checkboxInput.addEventListener('click' , ()=>{
-            if(isHide){
-                passwordInput.type = 'text'
-                isHide = false
-            }else{
-                passwordInput.type = 'password'
-                isHide = true
-            }
-        })
 
-    </script>
+
 </body>
 
 </html>

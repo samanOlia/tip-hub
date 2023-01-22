@@ -1166,6 +1166,7 @@ footer .news form button {
 .nav-teacher li {
     font-size: 14px;
     color: #112031;
+    cursor: pointer;
 }
 .teacher-section {
     display: none;

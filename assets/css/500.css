@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Russo+One");
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow:  hidden !important;
+    width: 100vw;
+    height: 100dvh;
+}
+.slider {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 150px;
+    color: white;
+    font-family: sans-serif;
+    text-align: right;
+}
+.slider input {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+
+.container-500 {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+}
+
+.container-500 span{
+    font-size: 80px;
+    text-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    padding: 0 0.2em;
+    font-family: "Russo One", sans-serif;
+}
+.container-500 p {
+    font-size: 20px;
+    font-family: "Russo One", sans-serif;
+}
+  
+
+  button {
+    font-size: 22px;
+    margin-top: 1.5em;
+    padding: 0.5em 1em;
+    letter-spacing: 1px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    z-index: 999;
+    border: 2px solid white;
+    border-radius: 5px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.2s ease;
+  }
+  button:hover {
+    opacity: 0.7;
+  }
+  button:focus {
+    outline: 0;
+  }

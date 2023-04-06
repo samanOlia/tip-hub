@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/500.css">
+    <title>500 Page</title>
+</head>
+
+<body class="">
+    <canvas id="stars"></canvas>
+    <!-- <div class="slider">
+        <input type="range" min="0.5" max="15" value="2" step="0.5">
+        Speed: <span id="speed"></span>
+    </div> -->
+
+    <div class="container-500">
+        <span>خطای سرور</span>
+        <p> ایمیل شمل از قبل در سایت ثبت شده است</p>
+        <button class="">برگشت</button>
+    </div>
+    <!-- <div class="moon">
+        <div class="face">
+            <div class="mouth"></div>
+            <div class="eyes">
+                <div class="eye-left"></div>
+                <div class="eye-right"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <script>
+        // DOM selectors
+        const stars = document.getElementById('stars');
+        const starsCtx = stars.getContext('2d');
+        const slider = document.querySelector(".slider input");
+        const output = document.querySelector("#speed");
+
+        // global variables
+        let screen, starsElements, starsParams = { speed: 2, number: 300, extinction: 4 };
+
+        // run stars
+        setupStars();
+        updateStars();
+
+        // handle slider
+        output.innerHTML = slider.value;
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+            starsParams.speed = this.value;
+        };
+
+        // update stars on resize to keep them centered
+        window.onresize = function () {
+            setupStars();
+        };
+
+        // star constructor
+        function Star() {
+            this.x = Math.random() * stars.width;
+            this.y = Math.random() * stars.height;
+            this.z = Math.random() * stars.width;
+
+            this.move = function () {
+                this.z -= starsParams.speed;
+                if (this.z <= 0) {
+                    this.z = stars.width;
+                }
+            };
+
+            this.show = function () {
+                let x, y, rad, opacity;
+                x = (this.x - screen.c[0]) * (stars.width / this.z);
+                x = x + screen.c[0];
+                y = (this.y - screen.c[1]) * (stars.width / this.z);
+                y = y + screen.c[1];
+                rad = stars.width / this.z;
+                opacity = (rad > starsParams.extinction) ? 1.5 * (2 - rad / starsParams.extinction) : 1;
+
+                starsCtx.beginPath();
+                starsCtx.fillStyle = "rgba(255, 255, 255, " + opacity + ")";
+                starsCtx.arc(x, y, rad, 0, Math.PI * 2);
+                starsCtx.fill();
+            }
+        }
+
+        // setup <canvas>, create all the starts
+        function setupStars() {
+            screen = {
+                w: window.innerWidth,
+                h: window.innerHeight,
+                c: [window.innerWidth * 0.5, window.innerHeight * 0.5]
+            };
+            window.cancelAnimationFrame(updateStars);
+            stars.width = screen.w;
+            stars.height = screen.h;
+            starsElements = [];
+            for (let i = 0; i < starsParams.number; i++) {
+                starsElements[i] = new Star();
+            }
+        }
+
+        // redraw the frame
+        function updateStars() {
+            starsCtx.fillStyle = "black";
+            starsCtx.fillRect(0, 0, stars.width, stars.height);
+            starsElements.forEach(function (s) {
+                s.show();
+                s.move();
+            });
+            window.requestAnimationFrame(updateStars);
+        }
+    </script>
+</body>
+
+</html>

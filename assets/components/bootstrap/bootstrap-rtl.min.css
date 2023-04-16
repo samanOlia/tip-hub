@@ -519,7 +519,7 @@ pre code {
     max-width: 540px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .container,
   .container-md,
   .container-sm {
@@ -1032,7 +1032,7 @@ pre code {
     margin-right: 91.666667%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .col-md {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -3108,7 +3108,7 @@ input[type="submit"].btn-block {
     left: auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .dropdown-menu-md-left {
     right: auto;
     left: 0;
@@ -4252,7 +4252,7 @@ input[type="submit"].btn-block {
     padding-left: 0;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .navbar-expand-md {
     -ms-flex-flow: row nowrap;
     flex-flow: row nowrap;
@@ -5298,7 +5298,7 @@ a.badge-dark:focus {
     border-right-width: 1px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .list-group-horizontal-md {
     -ms-flex-direction: row;
     flex-direction: row;
@@ -6354,7 +6354,7 @@ button.bg-dark:hover {
     display: inline-flex !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .d-md-none {
     display: none !important;
   }
@@ -6788,7 +6788,7 @@ button.bg-dark:hover {
     align-self: stretch !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .flex-md-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -7222,7 +7222,7 @@ button.bg-dark:hover {
     float: none !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .float-md-left {
     float: left !important;
   }
@@ -8082,7 +8082,7 @@ button.bg-dark:hover {
     margin-left: auto !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .m-md-0 {
     margin: 0 !important;
   }
@@ -9163,7 +9163,7 @@ button.bg-dark:hover {
     text-align: center !important;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768.5px) {
   .text-md-left {
     text-align: left !important;
   }

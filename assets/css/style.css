@@ -194,6 +194,9 @@ body {
     transition: all 0.3s ease-in-out;
     background-color: white;
     box-shadow: rgba(137, 135, 135, 0.05) -1px 4px 15px 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .nav-menu-pc {
@@ -206,6 +209,12 @@ body {
     position: fixed;
     top: 80px;
     transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768.5px) {
+    .nav-menu-pc {
+        display: none;
+    }
 }
 
 .nav-menu a {
@@ -231,10 +240,22 @@ body {
     position: fixed;
     top: 160px;
     background-color: white;
-    box-shadow: rgb(56 56 56 / 5%) -1px 4px 15px 3px;
+    box-shadow: rgba(34, 34, 34, 0.05) -1px 4px 15px 3px;
     display: none;
-    min-width: 200px;
+    /* min-width: 200px; */
+    width: calc(100% - 80px) !important;
     z-index: 3;
+    margin-left: 2.5rem !important;
+    max-height: 60dvh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 5px;
+}
+.sub-menu::-webkit-scrollbar {
+    width: 6px;
+}
+.sub-menu .title {
+    padding: 8px 10px;
 }
 
 .sub-menu a {
@@ -255,7 +276,7 @@ body {
     height: 40px;
     position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 768.5px) {
     .nav-search-btn {
         width: 91%;
         margin: 0px 20px 20px 20px;
@@ -287,7 +308,6 @@ body {
     background-color: rgb(238, 235, 235);
     color: var(--nav-search-btn-color);
 }
-
 
 .logo img {
     width: 100px;
@@ -391,7 +411,7 @@ body {
 /* end account-btn */
 
 /* nav mob */
-@media (max-width: 768px) {
+@media (max-width: 768.5px) {
     .mob1 {
         display: block;
         z-index: 23;
@@ -445,10 +465,14 @@ body {
     .showmenu {
         right: 0%;
     }
+    .nav-header-box-mob {
+        display: none;
+    }
 }
 
 /* mobile header */
 .nav-header-box-mob {
+    display: flex;
     align-items: center !important;
     justify-content: space-between !important;
     height: 80px;
@@ -464,7 +488,6 @@ body {
     right: 50%;
     transform: translate(50%);
 }
-
 
 .hamburger-icon {
     position: fixed;
@@ -516,9 +539,56 @@ main {
     }
 }
 
+.tiphub-intro {
+    width: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    background-image: url(../image/tiphub-intro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px !important;
+}
+
+.tiphub-intro-search {
+    width: 500px;
+    height: 60px;
+}
+.tiphub-intro-search input {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+/* typewriter */
+#typewriter span {
+    font-family: "dana-bold" !important;
+    font-size: 1.7rem;
+}
+
+@media (max-width: 768.5px) {
+    .tiphub-intro-search {
+        width: 100%;
+    }
+    /* typewriter */
+    #typewriter span {
+        font-size: 1.3rem;
+    }
+}
+
 .title-section {
     font-family: "dana-bold" !important;
     font-size: 1.7rem;
+}
+@media (max-width: 768.5px) {
+    .title-section {
+        font-size: 1.3rem;
+    }
 }
 
 .video-card {
@@ -1162,8 +1232,8 @@ footer .news form button {
 .teacher-section.active {
     display: block;
     opacity: 1;
-    animation: fadeInOut .5s ease;
-    -webkit-animation: fadeInOut .5s ease;
+    animation: fadeInOut 0.5s ease;
+    -webkit-animation: fadeInOut 0.5s ease;
 }
 @keyframes fadeInOut {
     0% {
@@ -1173,7 +1243,6 @@ footer .news form button {
         opacity: 1;
     }
 }
-
 
 /* why-tiphub */
 .why-tiphub-header {
@@ -1229,7 +1298,7 @@ footer .news form button {
     width: 100%;
     height: 150px;
 }
-.blogs-item .blog-category{
+.blogs-item .blog-category {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -1256,3 +1325,23 @@ footer .news form button {
     white-space: normal;
 }
 
+/* filter-videos-form */
+
+.filter-videos-form .orderby {
+    height: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #e8e5f6;
+    font-size: 16px;
+    border: none;
+    padding: 5px;
+}
+
+@media (max-width:768.5px) {
+    .filter-videos-form .orderby {
+        font-size: 13px;
+    }
+}

@@ -90,7 +90,7 @@
     let  navMenuItemMob = document.querySelectorAll('.nav-menu-item-mob')
     let chevron = document.querySelectorAll('.chev-icon')
     let subMenuMob = document.querySelectorAll('.sub-menu-mob')
-    console.log(subMenuMob);
+    
         for (let w = 0; w < navMenuItemMob.length; w++) {
             navMenuItemMob[w].addEventListener('click', () => {
                 if (subMenuMob[w].classList.contains('showsubmenumob')) {
@@ -114,3 +114,5 @@
             })
 
         }
+
+      

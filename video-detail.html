@@ -1,169 +1,122 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="assets/components/bootstrap/bootstrap-rtl.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/components/owl-carousel/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/font-awesome/css/font-awesome.min.css"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="assets/components/bootstrap/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="assets/components/owl-carousel/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css" referrerpolicy="no-referrer" />
+    <title>مجله</title>
+  </head>
 
-
-    <title> مجله</title>
-</head>
-
-<body>
-
+  <body>
     <!-- top-header -->
     <div class="shadow position-fixed w-100 h-100 d-md-none d-lg-none"></div>
     <!-- top-header -->
     <header class="position-relative">
-        <div class="main-header position-relative">
-
-            <div class="nav-header-box mob1 d-md-flex d-lg-flex align-items-center justify-content-between">
-
-                <div class="d-flex flex-column flex-md-row align-items-center pr-md-4">
-                    <div class="logo d-flex justify-content-center align-items-center ml-3">
-                        <a href="index.html"><img src="assets/image/logo.png" class="logo-img-light" alt="" /></a>
-                    </div>
-                    <div class="nav-search-btn">
-                        <input type="search" placeholder="جستجو">
-                        <i class="fa fa-search"></i>
-                    </div>
-
-                </div>
-                <div class="d-block d-md-flex align-items-center pl-md-4">
-                    <div class="dropdown notification-box">
-                        <div class="position-relative d-none d-md-block " type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/image/notification.png" class="notification-img" alt="">
-                            <div class="badge">2</div>
-                        </div>
-                        <div class="dropdown-menu notification-menu-items custom-bg"
-                            aria-labelledby="dropdownMenuButton">
-                            <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
-                            <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید </a>
-                            <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی</a>
-
-                        </div>
-                    </div>
-
-                    <div class="header-account mx-3">
-                        <div class="notification-box dropdown">
-                            <a href="" class="btn account-btn" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="prepend-icon ml-1">
-                                    <i class="fa fa-user-circle"></i>
-                                </span> <span>حساب کاربری </span>
-                            </a>
-                            <div class="dropdown-menu account-menu-items custom-bg"
-                                aria-labelledby="dropdownMenuButton">
-                                <a class="" href="login.html"> <i class=" fa fa-account"></i>
-                                    ورود</a>
-                                <a class="" href="register.html"> ثبت نام</a>
-                                <a class="" href="user-panel.html"> پروفایل</a>
-                                <a class="" href="#"> مورد علاقه ها</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <nav class="nav-menu p-0 m-0 d-flex d-sm-flex d-md-none d-lg-none">
-                    <li id="" class="mx-3"><a class="nav-menu-item-mob">زبان های برنامه نویسی
-                            <i class="fa fa-chevron-down pr-1"></i>
-                        </a>
-                        <ul class="sub-menu-mob">
-                            <a href="">جاوا</a>
-                            <a href="">پایتون </a>
-                            <a href="">آیتم</a>
-                            <a href=""> آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                        </ul>
-                    </li>
-                    <li id="" class="mx-3"><a class="nav-menu-item-mob ">فریمورک
-                            <i class="fa fa-chevron-down pr-1"></i>
-                        </a>
-                        <ul class="sub-menu-mob">
-                            <a href="">جاوا</a>
-                            <a href="">پایتون </a>
-                            <a href="">آیتم</a>
-                            <a href=""> آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                        </ul>
-                    </li>
-                    <li id="" class="mx-3">
-                        <a class="nav-menu-item-mob ">طراحی وب
-                            <i class="fa fa-chevron-down pr-1"></i>
-                        </a>
-                        <ul class="sub-menu-mob">
-                            <a href="">جاوا</a>
-                            <a href="">پایتون </a>
-                            <a href="">آیتم</a>
-                            <a href=""> آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                        </ul>
-                    </li>
-                    <li id="" class="mx-3"><a class="nav-menu-item-mob">زبان های برنامه نویسی
-                            <i class="fa fa-chevron-down pr-1"></i>
-                        </a>
-                        <ul class="sub-menu-mob">
-                            <a href="">جاوا</a>
-                            <a href="">پایتون </a>
-                            <a href="">آیتم</a>
-                            <a href=""> آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                            <a href="">آیتم</a>
-                        </ul>
-                    </li>
-
-                </nav>
-
+      <div class="main-header position-relative">
+        <div
+          class="nav-header-box mob1 d-md-flex d-lg-flex align-items-center justify-content-between"
+        >
+          <div
+            class="d-flex flex-column flex-md-row align-items-center pr-md-4"
+          >
+            <div
+              class="logo d-flex justify-content-center align-items-center ml-3"
+            >
+              <a href="index.html"
+                ><img src="assets/image/logo.png" class="logo-img-light" alt=""
+              /></a>
+            </div>
+            <div class="nav-search-btn">
+              <input type="search" placeholder="جستجو" />
+              <i class="fa fa-search"></i>
+            </div>
+          </div>
+          <div class="d-block d-md-flex align-items-center pl-md-4">
+            <div class="dropdown notification-box">
+              <div
+                class="position-relative d-none d-md-block"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img
+                  src="assets/image/notification.png"
+                  class="notification-img"
+                  alt=""
+                />
+                <div class="badge">2</div>
+              </div>
+              <div
+                class="dropdown-menu notification-menu-items custom-bg"
+                aria-labelledby="dropdownMenuButton"
+              >
+                <a class="border-bottom" href="#">
+                  ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+                </a>
+                <a class="border-bottom" href="#">
+                  ایپسوم متن ساختگی با تولید
+                </a>
+                <a class="border-bottom" href="#">
+                  ایپسوم متن ساختگی با تولید سادگی</a
+                >
+              </div>
             </div>
 
-
-            <section
-                class="nav-header-box-mob d-flex d-sm-flex d-md-none  align-items-center justify-content-between d-md-none d-lg-none position-fixed">
-
-                <div class="hamburger-icon">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+            <div class="header-account mx-3">
+              <div class="notification-box dropdown">
+                <a
+                  href=""
+                  class="btn account-btn"
+                  type="button"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span class="prepend-icon ml-1">
+                    <i class="fa fa-user-circle"></i>
+                  </span>
+                  <span>حساب کاربری </span>
+                </a>
+                <div
+                  class="dropdown-menu account-menu-items custom-bg"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <a class="" href="login.html">
+                    <i class="fa fa-account"></i> ورود</a
+                  >
+                  <a class="" href="register.html"> ثبت نام</a>
+                  <a class="" href="user-panel.html"> پروفایل</a>
+                  <a class="" href="#"> مورد علاقه ها</a>
                 </div>
-                <div class="logo">
-                    <a href="index.html"><img src="assets/image/logo.png" class="logo-img" alt="" /></a>
-                </div>
+              </div>
+            </div>
+          </div>
 
-                <div class="dropdown notification-box mx-3">
-                    <div class="position-relative d-block d-md-none " type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/image/notification.png" class="notification-img" alt="">
-                        <div class="badge">2</div>
-                    </div>
-                    <div class="dropdown-menu notification-menu-items custom-bg" aria-labelledby="dropdownMenuButton">
-                        <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ </a>
-                        <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید </a>
-                        <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید سادگی</a>
-
-                    </div>
-                </div>
-
-            </section>
-        </div>
-
-    </header>
-
-    <nav class="nav-menu nav-menu-pc  d-none d-md-flex px-4" id="navbar">
-        <li id="" class="mx-3 menu-item"><a href="" class="nav-menu-item ">زبان های برنامه نویسی </a>
-            <ul class="sub-menu">
+          <nav class="nav-menu p-0 m-0 d-flex d-sm-flex d-md-none d-lg-none">
+            <li id="" class="mx-3">
+              <a class="nav-menu-item-mob"
+                >زبان های برنامه نویسی
+                <i class="fa fa-chevron-down pr-1"></i>
+              </a>
+              <ul class="sub-menu-mob">
                 <a href="">جاوا</a>
                 <a href="">پایتون </a>
                 <a href="">آیتم</a>
@@ -171,569 +124,778 @@
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
-            </ul>
-        </li>
-        <li id="" class="mx-3 menu-item"><a href="" class="nav-menu-item">فریمورک </a>
-            <ul class="sub-menu">
-                <a href="">جنگو</a>
+              </ul>
+            </li>
+            <li id="" class="mx-3">
+              <a class="nav-menu-item-mob"
+                >فریمورک
+                <i class="fa fa-chevron-down pr-1"></i>
+              </a>
+              <ul class="sub-menu-mob">
+                <a href="">جاوا</a>
+                <a href="">پایتون </a>
+                <a href="">آیتم</a>
+                <a href=""> آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
+              </ul>
+            </li>
+            <li id="" class="mx-3">
+              <a class="nav-menu-item-mob"
+                >طراحی وب
+                <i class="fa fa-chevron-down pr-1"></i>
+              </a>
+              <ul class="sub-menu-mob">
+                <a href="">جاوا</a>
+                <a href="">پایتون </a>
+                <a href="">آیتم</a>
+                <a href=""> آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
-            </ul>
-        </li>
-        <li id="" class="mx-3 menu-item"><a href="" class="nav-menu-item">طراحی وب</a>
-            <ul class="sub-menu">
+              </ul>
+            </li>
+            <li id="" class="mx-3">
+              <a class="nav-menu-item-mob"
+                >زبان های برنامه نویسی
+                <i class="fa fa-chevron-down pr-1"></i>
+              </a>
+              <ul class="sub-menu-mob">
+                <a href="">جاوا</a>
+                <a href="">پایتون </a>
+                <a href="">آیتم</a>
+                <a href=""> آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
                 <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-            </ul>
-        </li>
-        <li id="" class="mx-3 menu-item"><a href="" class="nav-menu-item">مهارت های ارتباطی</a>
-            <ul class="sub-menu">
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-                <a href="">آیتم</a>
-            </ul>
-        </li>
+              </ul>
+            </li>
+          </nav>
+        </div>
+
+        <section
+          class="nav-header-box-mob d-flex d-sm-flex d-md-none align-items-center justify-content-between d-md-none d-lg-none position-fixed"
+        >
+          <div class="hamburger-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="logo">
+            <a href="index.html"
+              ><img src="assets/image/logo.png" class="logo-img" alt=""
+            /></a>
+          </div>
+
+          <div class="dropdown notification-box mx-3">
+            <div
+              class="position-relative d-block d-md-none"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <img
+                src="assets/image/notification.png"
+                class="notification-img"
+                alt=""
+              />
+              <div class="badge">2</div>
+            </div>
+            <div
+              class="dropdown-menu notification-menu-items custom-bg"
+              aria-labelledby="dropdownMenuButton"
+            >
+              <a class="border-bottom" href="#">
+                ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
+              </a>
+              <a class="border-bottom" href="#"> ایپسوم متن ساختگی با تولید </a>
+              <a class="border-bottom" href="#">
+                ایپسوم متن ساختگی با تولید سادگی</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+
+    <nav class="nav-menu nav-menu-pc d-none d-md-flex px-4" id="navbar">
+      <li id="" class="mx-3 menu-item">
+        <a href="" class="nav-menu-item">زبان های برنامه نویسی </a>
+        <ul class="sub-menu">
+          <a href="">جاوا</a>
+          <a href="">پایتون </a>
+          <a href="">آیتم</a>
+          <a href=""> آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+        </ul>
+      </li>
+      <li id="" class="mx-3 menu-item">
+        <a href="" class="nav-menu-item">فریمورک </a>
+        <ul class="sub-menu">
+          <a href="">جنگو</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+        </ul>
+      </li>
+      <li id="" class="mx-3 menu-item">
+        <a href="" class="nav-menu-item">طراحی وب</a>
+        <ul class="sub-menu">
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+        </ul>
+      </li>
+      <li id="" class="mx-3 menu-item">
+        <a href="" class="nav-menu-item">مهارت های ارتباطی</a>
+        <ul class="sub-menu">
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+          <a href="">آیتم</a>
+        </ul>
+      </li>
     </nav>
 
     <main>
-
-        <section class="py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <div>
-                            <!-- video -->
-                            <div class="video-player-box">
-                                <div class="video-icon">
-                                    <div class="btn video-btn" onclick="playvideo()" id="videobtn">
-                                        <img src="assets/image/play-video-btn.png" alt="">
-                                    </div>
-                                </div>
-                                <div class="video">
-                                    <video width="100%" id="myVideo" autoplay>
-                                        <source src="assets/video/v1.mp4" type="video/mp4">
-                                    </video>
-                                    <img src="assets/image/codeyadtv.jpg" width="100%" height="100%"
-                                        class="position-absolute video-poster" alt="">
-
-                                    <div class="video-overlay"></div>
-                                    <div class="video-description px-2 text-white">
-
-                                        <p> 35 دقیقه</p>
-                                    </div>
-                                    <h5 class="close-btn" onclick="stopPlayer()">X</h5>
-                                </div>
-                            </div>
-                            <!-- end video -->
-                            <!-- title -->
-                            <h3 class="video-title my-3"> تازه ترین ویدیو ها تازه ترین ویدیو ها تازه ترین ویدیو
-                            </h3>
-
-                            <div class="d-block d-md-none">
-                                <button class="btn buy-video-btn w-100 my-4">خرید این ویدیو</button>
-                                <!-- <p class="my-4 w-100 my-video-notif">این آموزش خریداری شده</p> -->
-                            </div>
-
-                            <div class="d-flex align-items-center justify-content-between border-bottom pb-3">
-                                <p class="color78">22 مرداد 1401</p>
-                                <div class="d-flex align-items-center view-like">
-                                    <div class="mx-3">
-                                        <span>22</span>
-                                        <i class="fa fa-eye"></i>
-                                    </div>
-                                    <div>
-                                        <span>21</span>
-                                        <i class="fa fa-heart-o" type='button' aria-hidden="true"></i>
-                                        <!-- <i class="fa fa-heart liked" type='button' aria-hidden="true" ></i> -->
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <!-- description -->
-                            <div class="border-bottom pb-3">
-                                <h4 class="my-3">درباره فیلم</h4>
-                                <p class="color78">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                    استفاده از طراحان
-                                    گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-                                    شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                    باشد
-                                </p>
-
-                                <!-- video-slider -->
-
-                                <div class="my-3">
-                                    <h2 class="title-section mb-3"> ویدیوهای مرتبط</h2>
-                                    <div class="mb-5 ">
-                                        <div id="video-slider" class="owl-carousel owl-theme p-0 video-slider">
-                                            <!-- item -->
-                                            <div class="">
-                                                <div class="custom-bg">
-                                                    <div class="video-card">
-                                                        <a href="video-detail.html" class="position-relative d-block ">
-                                                            <img src="assets/image/p3.png" alt=""
-                                                                class="img-fluid w-100 h-100">
-                                                            <div class="video-play-btn">
-                                                                <i class="fa fa-play"></i>
-                                                            </div>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-between video-category-time">
-                                                                <h6 class="">موفقیت</h6>
-                                                                <span class="vid-time">5:25</span>
-                                                                <span class="discount">10%</span>
-                                                            </div>
-                                                            <div class="video-card-details">
-                                                                <div>
-                                                                    <span>22</span>
-                                                                    <i class="fa fa-eye"></i>
-                                                                </div>
-                                                                <div>
-                                                                    <span>22</span>
-                                                                    <i class="fa fa-heart"></i>
-                                                                </div>
-                                                                <div>
-                                                                    <span>22</span>
-                                                                    <i class="fa fa-comment"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="article-overlay"></div>
-                                                        </a>
-
-                                                    </div>
-                                                    <a href="video-detail.html">
-                                                        <h5 class="video-card-title m-2"> تازه ترین ویدیو ها تازه ترین
-                                                            ویدیو ها تازه ترین ویدیو
-                                                            ها تازه ترین ویدیو هاتازه
-                                                            ترین ویدیو هاتازه ترین ویدیو هاتازه ترین ویدیو ها</h5>
-                                                    </a>
-                                                    <div class=" my-3 pb-3 mx-2 video-card-intro">
-                                                        <div class="">
-                                                            <i class="fa fa-user  ml-1 "></i>
-                                                            <span>امیرحسین امیری</span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <s class="font14">
-                                                                10000 تومان
-                                                            </s>
-                                                            <span class="font14 text-danger">
-                                                                5000 تومان
-                                                            </span>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end item -->
-                                            <!-- item -->
-                                            <div class="">
-                                                <div class="custom-bg">
-                                                    <div class="video-card">
-                                                        <a href="video-detail.html" class="position-relative d-block ">
-                                                            <img src="assets/image/p3.png" alt=""
-                                                                class="img-fluid w-100 h-100">
-                                                            <div class="video-play-btn">
-                                                                <i class="fa fa-play"></i>
-                                                            </div>
-                                                            <div
-                                                                class="d-flex align-items-center justify-content-between video-category-time">
-                                                                <h6 class="">موفقیت</h6>
-                                                                <span class="vid-time">5:25</span>
-                                                                <span class="discount">10%</span>
-                                                            </div>
-                                                            <div class="video-card-details">
-                                                                <div>
-                                                                    <span>22</span>
-                                                                    <i class="fa fa-eye"></i>
-                                                                </div>
-                                                                <div>
-                                                                    <span>22</span>
-                                                                    <i class="fa fa-heart"></i>
-                                                                </div>
-                                                                <div>
-                                                                    <span>22</span>
-                                                                    <i class="fa fa-comment"></i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="article-overlay"></div>
-                                                        </a>
-
-                                                    </div>
-                                                    <a href="video-detail.html">
-                                                        <h5 class="video-card-title m-2"> تازه ترین ویدیو ها تازه ترین
-                                                            ویدیو ها تازه ترین ویدیو
-                                                            ها تازه ترین ویدیو هاتازه
-                                                            ترین ویدیو هاتازه ترین ویدیو هاتازه ترین ویدیو ها</h5>
-                                                    </a>
-                                                    <div class=" my-3 pb-3 mx-2 video-card-intro">
-                                                        <div class="">
-                                                            <i class="fa fa-user  ml-1 "></i>
-                                                            <span>امیرحسین امیری</span>
-                                                        </div>
-                                                        <div class="d-flex flex-column">
-                                                            <s class="font14">
-                                                                10000 تومان
-                                                            </s>
-                                                            <span class="font14 text-danger">
-                                                                5000 تومان
-                                                            </span>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- end item -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end video-slider -->
-
-                                <div class="labels">
-                                    <h4 class="my-3">برچسب ها</h4>
-                                    <ul class="d-flex align-items-center">
-                                        <li><a href="#" title="">#گردشگری</a></li>
-                                        <li><a href="#" title="">#تفریحی </a></li>
-                                        <li><a href="#" title="">#دشت نور</a></li>
-                                        <li><a href="#" title="">#مکان های تفریحی</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- end des -->
-
-                            <!-- comments -->
-                            <div>
-
-                                <div class="py-3">
-                                    <span>2982</span>
-                                    <span>نظر</span>
-                                </div>
-
-                                <form action="">
-                                    <textarea class="w-100 p-2 comment-area" name="" id="" cols="30" rows="10"
-                                        placeholder="دیدگاه خود را بنویسید"></textarea>
-                                    <div class="d-flex align-items-center justify-content-end pt-3">
-                                        <button class="btn custom-btn">ارسال نظر</button>
-                                    </div>
-                                </form>
-                                <!-- comment -->
-                                <div class="comment my-3 p-2">
-                                    <div class=" d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
-                                            <p class="user-name pr-2">امیرحسین امیری</p>
-                                        </div>
-
-                                        <p class="comment-date-time"> چهار روز پیش</p>
-                                    </div>
-                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
-                                        با تولید سادگی نامفهوم
-                                        از صنعت چاپ،
-                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
-
-                                    <div class="d-flex align-items-center justify-content-end reply" type='button'>
-                                        <i class="fa fa-reply"></i>
-                                        <p>پاسخ به این نظر</p>
-                                    </div>
-                                </div>
-                                <!-- end comment -->
-                                <div class="comment my-3 p-2">
-                                    <div class=" d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
-                                            <p class="user-name pr-2">امیرحسین امیری</p>
-                                        </div>
-
-                                        <p class="comment-date-time"> چهار روز پیش</p>
-                                    </div>
-                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
-                                        با تولید سادگی نامفهوم
-                                        از صنعت چاپ،
-                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
-
-                                    <div class="d-flex align-items-center justify-content-end reply" type='button'>
-                                        <i class="fa fa-reply"></i>
-                                        <p>پاسخ به این نظر</p>
-                                    </div>
-                                </div>
-                                <!-- end comment -->
-                                <div class="comment my-3 p-2">
-                                    <div class=" d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
-                                            <p class="user-name pr-2">امیرحسین امیری</p>
-                                        </div>
-
-                                        <p class="comment-date-time"> چهار روز پیش</p>
-                                    </div>
-                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
-                                        با تولید سادگی نامفهوم
-                                        از صنعت چاپ،
-                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
-
-                                    <div class="d-flex align-items-center justify-content-end reply" type='button'>
-                                        <i class="fa fa-reply"></i>
-                                        <p>پاسخ به این نظر</p>
-                                    </div>
-                                </div>
-                                <!-- end comment child -->
-                                <div class="comment my-3 p-2 comment-child">
-                                    <div class=" d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
-                                            <p class="user-name pr-2"> امیرحسین امیری</p>
-                                        </div>
-
-                                        <p class="comment-date-time"> چهار روز پیش</p>
-                                    </div>
-                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
-                                        با تولید سادگی نامفهوم
-                                        از صنعت چاپ،
-                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
-
-                                </div>
-                                <!-- end comment -->
-                                <!-- end comment child -->
-                                <div class="comment my-3 p-2 comment-child">
-                                    <div class=" d-flex align-items-center justify-content-between">
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <img src="assets/image/sutdent-prof.png" alt="student" class="user-profile">
-                                            <p class="user-name pr-2">امیرحسین امیری</p>
-                                        </div>
-
-                                        <p class="comment-date-time"> چهار روز پیش</p>
-                                    </div>
-                                    <p class="px-4 py-2 comment-text text-justify"> لورم ایپسوم متن ساختگی
-                                        با تولید سادگی نامفهوم
-                                        از صنعت چاپ،
-                                        و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
-                                        روزنامه و مجله در ستون و سطرآنچنان که لازم است،</p>
-
-                                </div>
-                                <!-- end comment -->
-
-
-
-                            </div>
-                            <!-- end comments -->
-
-                        </div>
+      <section class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <div>
+                <!-- video -->
+                <div class="video-player-box">
+                  <div class="video-icon">
+                    <div
+                      class="btn video-btn"
+                      onclick="playvideo()"
+                      id="videobtn"
+                    >
+                      <img src="assets/image/play-video-btn.png" alt="" />
                     </div>
-                    <!-- main -->
-                    <!-- side -->
-                    <aside class="col-md-4 ">
-                        <div class="custom-bg p-2 teacher-card">
-                            <div class="border-bottom py-3 text-center">
-                                <h4>درباره مدرس</h4>
-                            </div>
-                            <div class="d-flex align-items-center py-3">
-                                <img src="assets/image/sutdent-prof.png" alt="student" class="teacher-profile">
-                                <p class="user-name pr-2">امیرحسین امیری </p>
-                            </div>
-                            <p class="color78 teacher-description py-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
-                                صنعت چاپ و با استفاده از طراحان گرافیک
-                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                  </div>
+                  <div class="video">
+                    <video width="100%" id="myVideo" autoplay>
+                      <source src="assets/video/v1.mp4" type="video/mp4" />
+                    </video>
+                    <img
+                      src="assets/image/codeyadtv.jpg"
+                      width="100%"
+                      height="100%"
+                      class="position-absolute video-poster"
+                      alt=""
+                    />
 
-                            <div
-                                class="teacher-social-media d-flex align-items-center justify-content-between flex-wrap">
-                                <a href=""> <i class="fa fa-instagram"></i></a>
-                                <a href=""> <i class="fa fa-github"></i></a>
-                                <a href=""> <i class="fa fa-linkedin"></i></a>
-                                <a href=""> <i class="fa fa-twitter"></i></a>
-                            </div>
-
-                            <div class="d-none d-md-block">
-                                <!-- <button class="btn buy-video-btn w-100 my-4">خرید این  ویدیو</button> -->
-                                <p class="my-4 w-100 my-video-notif">این آموزش خریداری شده</p>
-                            </div>
-                        </div>
-
-                    </aside>
-
-                    <!-- end side -->
+                    <div class="video-overlay"></div>
+                    <div class="video-description px-2 text-white">
+                      <p>35 دقیقه</p>
+                    </div>
+                    <h5 class="close-btn" onclick="stopPlayer()">X</h5>
+                  </div>
                 </div>
+                <!-- end video -->
+                <!-- title -->
+                <h3 class="video-title my-3">
+                  تازه ترین ویدیو ها تازه ترین ویدیو ها تازه ترین ویدیو
+                </h3>
+
+                <div class="d-block d-lg-none mb-3">
+                  <!-- btns -->
+                  <div class="btn-group w-100">
+                    <button class="btn btn-success"> خرید ویدیو</button>
+                    <button class="btn btn-danger">تماشای رایگان از یوتیوب</button>
+                  </div>
+                  <!-- end btns -->
+                  <!-- <p class="my-4 w-100 my-video-notif">این آموزش خریداری شده</p> -->
+                </div>
+
+                <div
+                  class="d-flex align-items-center justify-content-between border-bottom pb-3"
+                >
+                  <p class="color78">22 مرداد 1401</p>
+                  <div class="d-flex align-items-center view-like">
+                    <div class="mx-3">
+                      <span>22</span>
+                      <i class="fa fa-eye"></i>
+                    </div>
+                    <div>
+                      <span>21</span>
+                      <i
+                        class="fa fa-heart-o"
+                        type="button"
+                        aria-hidden="true"
+                      ></i>
+                      <!-- <i class="fa fa-heart liked" type='button' aria-hidden="true" ></i> -->
+                    </div>
+                  </div>
+                </div>
+                <!-- description -->
+                <div class="border-bottom pb-3">
+                  <h4 class="my-3">درباره فیلم</h4>
+                  <p class="color78">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                    با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                    و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                    کاربردی می باشد
+                  </p>
+
+                  <!-- video-slider -->
+
+                  <div class="my-3">
+                    <h2 class="title-section mb-3">ویدیوهای مرتبط</h2>
+                    <div class="mb-5">
+                      <div
+                        id="video-slider"
+                        class="owl-carousel owl-theme p-0 video-slider"
+                      >
+                        <!-- item -->
+                        <div class="">
+                          <div class="custom-bg">
+                            <div class="video-card">
+                              <a
+                                href="video-detail.html"
+                                class="position-relative d-block"
+                              >
+                                <img
+                                  src="assets/image/p3.png"
+                                  alt=""
+                                  class="img-fluid w-100 h-100"
+                                />
+                                <div class="video-play-btn">
+                                  <i class="fa fa-play"></i>
+                                </div>
+                                <div
+                                  class="d-flex align-items-center justify-content-between video-category-time"
+                                >
+                                  <h6 class="">موفقیت</h6>
+                                  <span class="vid-time">5:25</span>
+                                  <span class="discount">10%</span>
+                                </div>
+                                <div class="video-card-details">
+                                  <div>
+                                    <span>22</span>
+                                    <i class="fa fa-eye"></i>
+                                  </div>
+                                  <div>
+                                    <span>22</span>
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div>
+                                    <span>22</span>
+                                    <i class="fa fa-comment"></i>
+                                  </div>
+                                </div>
+                                <div class="article-overlay"></div>
+                              </a>
+                            </div>
+                            <a href="video-detail.html">
+                              <h5 class="video-card-title m-2">
+                                تازه ترین ویدیو ها تازه ترین ویدیو ها تازه ترین
+                                ویدیو ها تازه ترین ویدیو هاتازه ترین ویدیو
+                                هاتازه ترین ویدیو هاتازه ترین ویدیو ها
+                              </h5>
+                            </a>
+                            <div class="my-3 pb-3 mx-2 video-card-intro">
+                              <div class="">
+                                <i class="fa fa-user ml-1"></i>
+                                <span>امیرحسین امیری</span>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <s class="font14"> 10000 تومان </s>
+                                <span class="font14 text-danger">
+                                  5000 تومان
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end item -->
+                        <!-- item -->
+                        <div class="">
+                          <div class="custom-bg">
+                            <div class="video-card">
+                              <a
+                                href="video-detail.html"
+                                class="position-relative d-block"
+                              >
+                                <img
+                                  src="assets/image/p3.png"
+                                  alt=""
+                                  class="img-fluid w-100 h-100"
+                                />
+                                <div class="video-play-btn">
+                                  <i class="fa fa-play"></i>
+                                </div>
+                                <div
+                                  class="d-flex align-items-center justify-content-between video-category-time"
+                                >
+                                  <h6 class="">موفقیت</h6>
+                                  <span class="vid-time">5:25</span>
+                                  <span class="discount">10%</span>
+                                </div>
+                                <div class="video-card-details">
+                                  <div>
+                                    <span>22</span>
+                                    <i class="fa fa-eye"></i>
+                                  </div>
+                                  <div>
+                                    <span>22</span>
+                                    <i class="fa fa-heart"></i>
+                                  </div>
+                                  <div>
+                                    <span>22</span>
+                                    <i class="fa fa-comment"></i>
+                                  </div>
+                                </div>
+                                <div class="article-overlay"></div>
+                              </a>
+                            </div>
+                            <a href="video-detail.html">
+                              <h5 class="video-card-title m-2">
+                                تازه ترین ویدیو ها تازه ترین ویدیو ها تازه ترین
+                                ویدیو ها تازه ترین ویدیو هاتازه ترین ویدیو
+                                هاتازه ترین ویدیو هاتازه ترین ویدیو ها
+                              </h5>
+                            </a>
+                            <div class="my-3 pb-3 mx-2 video-card-intro">
+                              <div class="">
+                                <i class="fa fa-user ml-1"></i>
+                                <span>امیرحسین امیری</span>
+                              </div>
+                              <div class="d-flex flex-column">
+                                <s class="font14"> 10000 تومان </s>
+                                <span class="font14 text-danger">
+                                  5000 تومان
+                                </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- end item -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end video-slider -->
+
+                  <div class="labels">
+                    <h4 class="my-3">برچسب ها</h4>
+                    <ul class="d-flex align-items-center">
+                      <li><a href="#" title="">#گردشگری</a></li>
+                      <li><a href="#" title="">#تفریحی </a></li>
+                      <li><a href="#" title="">#دشت نور</a></li>
+                      <li><a href="#" title="">#مکان های تفریحی</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- end des -->
+
+                <!-- comments -->
+                <div>
+                  <div class="py-3">
+                    <span>2982</span>
+                    <span>نظر</span>
+                  </div>
+
+                  <form action="">
+                    <textarea
+                      class="w-100 p-2 comment-area"
+                      name=""
+                      id=""
+                      cols="30"
+                      rows="10"
+                      placeholder="دیدگاه خود را بنویسید"
+                    ></textarea>
+                    <div
+                      class="d-flex align-items-center justify-content-end pt-3"
+                    >
+                      <button class="btn custom-btn">ارسال نظر</button>
+                    </div>
+                  </form>
+                  <!-- comment -->
+                  <div class="comment my-3 p-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="assets/image/sutdent-prof.png"
+                          alt="student"
+                          class="user-profile"
+                        />
+                        <p class="user-name pr-2">امیرحسین امیری</p>
+                      </div>
+
+                      <p class="comment-date-time">چهار روز پیش</p>
+                    </div>
+                    <p class="px-4 py-2 comment-text text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                    </p>
+
+                    <div
+                      class="d-flex align-items-center justify-content-end reply"
+                      type="button"
+                    >
+                      <i class="fa fa-reply"></i>
+                      <p>پاسخ به این نظر</p>
+                    </div>
+                  </div>
+                  <!-- end comment -->
+                  <div class="comment my-3 p-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="assets/image/sutdent-prof.png"
+                          alt="student"
+                          class="user-profile"
+                        />
+                        <p class="user-name pr-2">امیرحسین امیری</p>
+                      </div>
+
+                      <p class="comment-date-time">چهار روز پیش</p>
+                    </div>
+                    <p class="px-4 py-2 comment-text text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                    </p>
+
+                    <div
+                      class="d-flex align-items-center justify-content-end reply"
+                      type="button"
+                    >
+                      <i class="fa fa-reply"></i>
+                      <p>پاسخ به این نظر</p>
+                    </div>
+                  </div>
+                  <!-- end comment -->
+                  <div class="comment my-3 p-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="assets/image/sutdent-prof.png"
+                          alt="student"
+                          class="user-profile"
+                        />
+                        <p class="user-name pr-2">امیرحسین امیری</p>
+                      </div>
+
+                      <p class="comment-date-time">چهار روز پیش</p>
+                    </div>
+                    <p class="px-4 py-2 comment-text text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                    </p>
+
+                    <div
+                      class="d-flex align-items-center justify-content-end reply"
+                      type="button"
+                    >
+                      <i class="fa fa-reply"></i>
+                      <p>پاسخ به این نظر</p>
+                    </div>
+                  </div>
+                  <!-- end comment child -->
+                  <div class="comment my-3 p-2 comment-child">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="assets/image/sutdent-prof.png"
+                          alt="student"
+                          class="user-profile"
+                        />
+                        <p class="user-name pr-2">امیرحسین امیری</p>
+                      </div>
+
+                      <p class="comment-date-time">چهار روز پیش</p>
+                    </div>
+                    <p class="px-4 py-2 comment-text text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                    </p>
+                  </div>
+                  <!-- end comment -->
+                  <!-- end comment child -->
+                  <div class="comment my-3 p-2 comment-child">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center"
+                      >
+                        <img
+                          src="assets/image/sutdent-prof.png"
+                          alt="student"
+                          class="user-profile"
+                        />
+                        <p class="user-name pr-2">امیرحسین امیری</p>
+                      </div>
+
+                      <p class="comment-date-time">چهار روز پیش</p>
+                    </div>
+                    <p class="px-4 py-2 comment-text text-justify">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه و مجله در ستون و سطرآنچنان که لازم است،
+                    </p>
+                  </div>
+                  <!-- end comment -->
+                </div>
+                <!-- end comments -->
+              </div>
             </div>
-        </section>
+            <!-- main -->
+            <!-- side -->
+            <aside class="col-lg-4">
+              <div class="custom-bg p-2 teacher-card">
+                <div class="border-bottom py-3 text-center">
+                  <h4>درباره مدرس</h4>
+                </div>
+                <div class="d-flex align-items-center py-3">
+                  <img
+                    src="assets/image/sutdent-prof.png"
+                    alt="student"
+                    class="teacher-profile"
+                  />
+                  <p class="user-name pr-2">امیرحسین امیری</p>
+                </div>
+                <p class="color78 teacher-description py-3">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد
+                </p>
 
+                <div
+                  class="teacher-social-media d-flex align-items-center justify-content-between flex-wrap"
+                >
+                  <a href=""> <i class="fa fa-instagram"></i></a>
+                  <a href=""> <i class="fa fa-github"></i></a>
+                  <a href=""> <i class="fa fa-linkedin"></i></a>
+                  <a href=""> <i class="fa fa-twitter"></i></a>
+                </div>
+
+                <div class="d-none d-lg-block">
+                  <!-- <button class="btn buy-video-btn w-100 my-4">خرید این  ویدیو</button> -->
+                  <!-- btns -->
+                  <div class="btn-group w-100">
+                    <button class="btn btn-success"> خرید ویدیو</button>
+                    <button class="btn btn-danger">تماشای رایگان از یوتیوب</button>
+                  </div>
+                  <!-- end btns -->
+                  <p class="my-4 w-100 my-video-notif">این آموزش خریداری شده</p>
+                </div>
+              </div>
+            </aside>
+
+            <!-- end side -->
+          </div>
+        </div>
+      </section>
     </main>
-
 
     <!-- footer -->
     <footer>
-        <div class="container-fluid py-5">
+      <div class="container-fluid py-5">
+        <section class="row d-flex align-items-baseline footer-items">
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div>
+              <h6 class="mb-3 text-white">
+                <span class="border-bottom">خدمات مشترکین</span>
+              </h6>
+              <a href="">
+                <p>راهنمای استفاده</p>
+              </a>
+              <a href="">
+                <p>سوالات متداول</p>
+              </a>
+              <a href="">
+                <p>قوانین و مقررات</p>
+              </a>
+              <a href="">
+                <p>پیشنهاد آموزش</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div>
+              <h6 class="mb-3 text-white">
+                <span class="border-bottom">خدمات مشترکین</span>
+              </h6>
+              <a href="">
+                <p>راهنمای استفاده</p>
+              </a>
+              <a href="">
+                <p>سوالات متداول</p>
+              </a>
+              <a href="">
+                <p>قوانین و مقررات</p>
+              </a>
+              <a href="">
+                <p>پیشنهاد آموزش</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div>
+              <h6 class="mb-3 text-white">
+                <span class="border-bottom">خدمات مشترکین</span>
+              </h6>
+              <a href="">
+                <p>مستندات جنگو</p>
+              </a>
+              <a href="">
+                <p>آموزش دارت</p>
+              </a>
+              <a href="">
+                <p>خلاصه کتاب‌های پایتون</p>
+              </a>
+              <a href="">
+                <p>چند نکته ی پایتونی</p>
+              </a>
+            </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-3 col-lg-3">
+            <div>
+              <h6 class="mb-3 text-white">
+                <span class="border-bottom">خدمات مشترکین</span>
+              </h6>
+              <a href="" class="">
+                <img src="assets/image/f1.svg" alt="" />
+                اهواز، خیابان نادری، خیابان امیری، کوچه مهرگان، پلاک ۱۴، کد پستی
+                6381838168
+              </a>
+              <a href="" class="">
+                <img src="assets/image/f2.svg" alt="" />
+                پشتیبانی: 09910549803
+              </a>
+              <a href="" class="">
+                <img src="assets/image/f3.svg" alt="" />
+                30009010
+              </a>
+              <a href="" class="">
+                <img src="assets/image/f4.svg" alt="" />
+                amirhamiri74@gmial.com
+              </a>
 
-            <section class="row d-flex align-items-baseline footer-items">
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="">
-                            <p>راهنمای استفاده</p>
-                        </a>
-                        <a href="">
-                            <p>سوالات متداول </p>
-                        </a>
-                        <a href="">
-                            <p>قوانین و مقررات </p>
-                        </a>
-                        <a href="">
-                            <p>پیشنهاد آموزش </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="">
-                            <p>راهنمای استفاده</p>
-                        </a>
-                        <a href="">
-                            <p>سوالات متداول </p>
-                        </a>
-                        <a href="">
-                            <p>قوانین و مقررات </p>
-                        </a>
-                        <a href="">
-                            <p>پیشنهاد آموزش </p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="">
-                            <p>مستندات جنگو</p>
-                        </a>
-                        <a href="">
-                            <p>آموزش دارت</p>
-                        </a>
-                        <a href="">
-                            <p>خلاصه کتاب‌های پایتون</p>
-                        </a>
-                        <a href="">
-                            <p>چند نکته ی پایتونی</p>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 col-lg-3">
-                    <div>
-                        <h6 class="mb-3 text-white"><span class="border-bottom">خدمات مشترکین</span></h6>
-                        <a href="" class="">
-                            <img src="assets/image/f1.svg" alt="">
-                            اهواز، خیابان نادری، خیابان امیری، کوچه مهرگان، پلاک ۱۴، کد پستی 6381838168
-                        </a>
-                        <a href="" class="">
-                            <img src="assets/image/f2.svg" alt="">
-                            پشتیبانی: 09910549803
-                        </a>
-                        <a href="" class="">
-                            <img src="assets/image/f3.svg" alt="">
-                            30009010
-                        </a>
-                        <a href="" class="">
-                            <img src="assets/image/f4.svg" alt="">
-                            amirhamiri74@gmial.com
-                        </a>
+              <button class="footer-btn my-3">ارسال پیام</button>
 
-                        <button class="footer-btn my-3">ارسال پیام</button>
-
-                        <div class="social-media d-flex align-items-center flex-wrap ">
-                            <a href=""> <i class="fa fa-instagram"></i></a>
-                            <a href=""> <i class="fa fa-telegram"></i></a>
-                            <a href=""> <i class="fa fa-whatsapp"></i></a>
-                            <a href=""> <i class="fa fa-twitter"></i></a>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-        </div>
+              <div class="social-media d-flex align-items-center flex-wrap">
+                <a href=""> <i class="fa fa-instagram"></i></a>
+                <a href=""> <i class="fa fa-telegram"></i></a>
+                <a href=""> <i class="fa fa-whatsapp"></i></a>
+                <a href=""> <i class="fa fa-twitter"></i></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/components/bootstrap/bootstrap.bundle.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/components/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
-        // video-player
-        const videobtn = document.querySelector('.video-btn');
-        const video = document.querySelector('.video');
-        const videotag = document.querySelector('video')
-        const videoDescription = document.querySelector('.video-description')
-        const closeBtn = document.querySelector('.close-btn')
-        const videoPoster = document.querySelector('.video-poster')
-        const videoOverlay = document.querySelector('.video-overlay')
-        function stopPlayer() {
-            videobtn.style.display = "block";
-            closeBtn.style.display = 'none';
-            videoPoster.style.display = 'inline'
-            video.style.zIndex = '-1'
-            videotag.pause()
-            videotag.style.borderRadius = '20px'
-            videoDescription.style.display = 'flex'
-            videotag.controls = false
-            videotag.style.borderRadius = '15px'
-            videoOverlay.style.display = 'block'
-        };
+      // video-player
+      const videobtn = document.querySelector(".video-btn");
+      const video = document.querySelector(".video");
+      const videotag = document.querySelector("video");
+      const videoDescription = document.querySelector(".video-description");
+      const closeBtn = document.querySelector(".close-btn");
+      const videoPoster = document.querySelector(".video-poster");
+      const videoOverlay = document.querySelector(".video-overlay");
+      function stopPlayer() {
+        videobtn.style.display = "block";
+        closeBtn.style.display = "none";
+        videoPoster.style.display = "inline";
+        video.style.zIndex = "-1";
+        videotag.pause();
+        videotag.style.borderRadius = "20px";
+        videoDescription.style.display = "flex";
+        videotag.controls = false;
+        videotag.style.borderRadius = "15px";
+        videoOverlay.style.display = "block";
+      }
 
-        function playvideo() {
-            videobtn.style.display = "none";
-            video.style.zIndex = '22222'
-            videotag.autoplay = true
-            videotag.play()
-            videotag.style.borderRadius = '20px'
-            videotag.controls = true
-            videoDescription.style.display = 'none'
-            closeBtn.style.display = 'block'
-            videoPoster.style.display = 'none'
-            videoOverlay.style.display = 'none'
-        }
+      function playvideo() {
+        videobtn.style.display = "none";
+        video.style.zIndex = "22222";
+        videotag.autoplay = true;
+        videotag.play();
+        videotag.style.borderRadius = "20px";
+        videotag.controls = true;
+        videoDescription.style.display = "none";
+        closeBtn.style.display = "block";
+        videoPoster.style.display = "none";
+        videoOverlay.style.display = "none";
+      }
 
-        // video-slider
-        $(".video-slider").owlCarousel({
-            // nav : true, // Show next and prev buttons
-            loop: true,
-            margin: 15,
-            smartSpeed: 1500,
-            smartSpeed: 1500,
-            rtl: true,
-            autoplay: true,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1,
-                },
-                440: {
-                    items: 1.5
-                },
-                1400: {
-                    items: 2,
-                },
-
-            }
-        });
+      // video-slider
+      $(".video-slider").owlCarousel({
+        // nav : true, // Show next and prev buttons
+        loop: true,
+        margin: 15,
+        smartSpeed: 1500,
+        smartSpeed: 1500,
+        rtl: true,
+        autoplay: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          440: {
+            items: 1.5,
+          },
+          1400: {
+            items: 2,
+          },
+        },
+      });
     </script>
-</body>
-
+  </body>
 </html>

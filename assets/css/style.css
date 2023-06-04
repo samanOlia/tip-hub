@@ -152,6 +152,9 @@ main{
     font-size: 14px;
     color: #787878;
 }
+.font12{
+    font-size: 12px;
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -930,7 +933,7 @@ footer .news form button {
     right: 0;
     top: 0;
     border-radius: 17px;
-    object-fit: cover;
+    object-fit: auto;
 }
 .video-overlay {
     position: absolute;
@@ -1253,12 +1256,15 @@ footer .news form button {
 }
 
 /* why-tiphub */
+.why-tiphub-container{
+    height: fit-content !important;
+}
 .why-tiphub-header {
     position: relative;
 }
 .why-tiphub-header img {
     width: 100%;
-    height: 350px;
+    height: 450px;
     object-fit: fill;
 }
 @media (max-width: 768px) {
@@ -1269,12 +1275,12 @@ footer .news form button {
 .why-tiphub-header .why-tiphub-title {
     position: absolute;
     bottom: 70px;
-    color: var(--green-color);
+    color: white;
 }
 .why-tiphub-des {
     position: absolute;
     bottom: 30px;
-    color: var(--green-color);
+    color: white;
 }
 .why-tiphub li {
     color: #112031;
@@ -1352,4 +1358,19 @@ footer .news form button {
     .filter-videos-form .orderby {
         font-size: 13px;
     }
+}
+
+/* playlists page */
+
+.playlist-card{
+    height: 80px;
+}
+.playlist-card img {
+    width: 140px;
+    height: 80px;
+}
+.playlist-card .playlist-desc-item{
+    font-size: 13px;
+    font-weight: bold;
+    color: #112031;
 }

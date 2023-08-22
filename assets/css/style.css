@@ -734,6 +734,11 @@ main {
     font-family: "dana-medium";
     height: 40px;
 }
+@media (max-width:768px) {
+   .video-card-title{
+    font-size: 13px;
+   }
+}
 .video-card-intro {
     height: 45px;
     display: flex;
@@ -949,8 +954,14 @@ footer .news form button {
 /* video-details */
 .video-title {
     color: #112031;
-    font-size: 25px;
+    font-size: 18px;
+    font-weight: bold;
     font-family: "dana-medium";
+}
+@media (max-width:768px) {
+    .video-title{
+        font-size: 16px;
+    }
 }
 .view-like span {
     color: #787878;
@@ -963,9 +974,22 @@ footer .news form button {
 }
 
 /* labels */
+.labels li {
+    margin: 5px 0 !important;
+    padding: 5px 0;
+}
 .labels a {
     margin: 0px 6px;
     color: #4878f2;
+    background-color: #e3e6e8;
+    padding: 5px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    font-size: 12px;
+
 }
 .comment-area {
     border: 1px solid rgb(207, 205, 205);
